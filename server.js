@@ -1,6 +1,7 @@
 const express = require('express');
+const path = require('path');
 
-const _port = 4100;
+const _port = process.env.PORT || 4100;
 const _app_folder = 'dist/casaa';
 const app = express();
 
@@ -16,4 +17,6 @@ app.all('*', function (req, res) {
 app.listen(_port, function () {
     console.log("Node Express server for " + app.name + " listening on http://localhost:" + _port);
 });
+
+
 
