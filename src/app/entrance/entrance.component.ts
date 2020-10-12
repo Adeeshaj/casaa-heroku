@@ -16,27 +16,27 @@ export class EntranceComponent implements OnInit {
 
   getUrl(slide){
     if(slide == 'left'){
-      return "url('http://127.0.0.1:8887/img/Landing Page/1 .jpg')";
+      return "url('/assets/img/Landing Page/1 .jpg')";
     } if (slide == 'right') {
-      return "url('http://127.0.0.1:8887/img/Landing Page/2 .mp4')";
+      return "url('/assets/img/Landing Page/2 .mp4')";
     }
   }
 
   getUrlById(id){
     if(id==1){
-      return "url('http://127.0.0.1:8887/img/Landing Page/1 .jpg')";
+      return "url('/assets/img/Landing Page/1 .jpg')";
     } else if(id == 2) {
-      return "url('http://127.0.0.1:8887/img/Landing Page/2 .mp4')";
+      return "url('/assets/img/Landing Page/2 .mp4')";
     } else if(id == 3) {
-      return "url('http://127.0.0.1:8887/img/Landing Page/3 .jpg')";
+      return "url('/assets/img/Landing Page/3 .jpg')";
     } else if(id == 4) {
-      return "url('http://127.0.0.1:8887/img/Landing Page/4 .jpg')";
+      return "url('/assets/img/Landing Page/4 .jpg')";
     } else if(id == 5) {
-      return "url('http://127.0.0.1:8887/img/Landing Page/5 .jpg')";
+      return "url('/assets/img/Landing Page/5 .jpg')";
     } else if(id == 6) {
-      return "url('http://127.0.0.1:8887/img/Landing Page/6 .mp4')";
+      return "url('/assets/img/Landing Page/6 .mp4')";
     } else {
-      return "url('http://127.0.0.1:8887/img/Landing Page/1 .tif')";
+      return "url('/assets/img/Landing Page/1 .tif')";
     }
   }
   

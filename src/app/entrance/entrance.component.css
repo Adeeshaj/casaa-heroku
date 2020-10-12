@@ -9,7 +9,7 @@
     width: 100%;
     height: 100%;
     position: relative;
-    background-image: url('http://127.0.0.1:8887/img/Landing Page/1 .jpg');
+    background-image: url('/assets/img/Landing\ Page/1 .jpg');
     background-size: cover;
     background-position: center;
     -webkit-animation: slide 30s linear infinite 0s;
@@ -119,14 +119,14 @@
     width: 56px;
     height: 56px;
     object-fit: contain;
-    background: url('http://127.0.0.1:8887/img/other/assets_5. CASAA web Home page_2020-09-19/Group 328.svg');
+    background: url('/assets/img/other/assets_5. CASAA web Home page_2020-09-19/Group 328.svg');
 }
 
 .Group-327 {
     width: 56px;
     height: 56px;
     object-fit: contain;
-    background: url('http://127.0.0.1:8887/img/other/assets_5. CASAA web Home page_2020-09-19/Group 327.svg');
+    background: url('/assets/img/other/assets_5. CASAA web Home page_2020-09-19/Group 327.svg');
 }
 
 .topic {
