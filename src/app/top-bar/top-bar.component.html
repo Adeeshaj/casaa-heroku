@@ -1,0 +1,13 @@
+<div class="bar" [style.background-image]= getBackground()>
+    <a [routerLink]="['/']"><img src='{{ "http://127.0.0.1:8887/img/other/" + logo + ".svg" }}' class="Group-324"></a>
+    <div class="nav" [style.color]=getColor()>
+        <img src='http://127.0.0.1:8887/img/other/assets_8. CASAA web project_2020-09-27/Group 348.svg' class="Group-348-projects" [style.visibility]="getVisibility('projects')">
+        <a [routerLink]="['/projects']"><div class="projects" [style.font-weight]= "getFontWeight('projects')"> Projects</div></a>
+        <img src='http://127.0.0.1:8887/img/other/assets_10. CASAA web About us_2020-10-07/Group 349.svg' class="Group-348-about" [style.visibility]="getVisibility('about')">
+        <a [routerLink]="['/about']"><div class="about-us" [style.font-weight]= "getFontWeight('about')"> About Us</div></a>
+        <img src='http://127.0.0.1:8887/img/other/assets_8. CASAA web project_2020-09-27/Group 348.svg' class="Group-348-news" [style.visibility]="getVisibility('news')">
+        <a [routerLink]="['/news']"><div class="news" [style.font-weight]= "getFontWeight('news')"> News</div></a>
+        <img src='http://127.0.0.1:8887/img/other/assets_8. CASAA web project_2020-09-27/Group 348.svg' class="Group-348-contact" [style.visibility]="getVisibility('contact')">
+        <a [routerLink]="['/contact']"><div class="contact-us" [style.font-weight]= "getFontWeight('contact')"> Contact Us</div></a>
+    </div>
+</div>

@@ -1,0 +1,91 @@
+.top-nav {
+    width: 100%;
+    text-align: center;
+}
+
+.categories {
+    height: 19px;
+    font-size: 14px;
+    width: 85%;
+    font-family:  'Open Sans', sans-serif;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.36;
+    letter-spacing: normal;
+    text-align: center;
+    color: #bebebe;
+    display: flex;
+    top: 133px;
+    position: relative;
+    flex-wrap: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.categories > div {
+    margin: auto;
+}
+
+.line{
+    width: 85%;
+    height: 1px;
+    top: 170.5px;
+    border-bottom: 1px solid #bebebe;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 0;
+}
+
+.Ellipse-61 {    
+    height: 7px;
+    object-fit: contain;
+    background: transparent;
+    width: 85%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    top: 167px;
+    position: relative;
+    flex-wrap: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Ellipse-61 > img {
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projects_flex_box {
+    top: 281px;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    height: 51vh;
+    z-index: 1;
+    overflow-y: auto;
+}   
+
+.projects_flex_box > div {
+    margin: 2px;
+}
+
+.footer {
+    bottom: 0px;
+    position: fixed;
+    height: 89px;
+    width: 100%;
+    z-index: 2;
+    background-color: #ffffff;
+}

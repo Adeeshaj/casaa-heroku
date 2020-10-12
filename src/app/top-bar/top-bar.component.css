@@ -1,0 +1,92 @@
+.bar {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 94px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0));
+    position: absolute;
+    z-index: 4;
+}
+
+.Group-324 {
+    width: 180px;
+    height: 60px;
+    object-fit: contain;
+    top: 22px;
+    left: 38px;
+    position: absolute;
+  }
+
+.nav {
+    top: 42px;
+    width: 100%;
+    height: 22px;
+    font-family:  'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.77);
+    position: absolute;
+}
+
+.projects{
+    right: 440px;
+    position: absolute;
+}
+
+.about-us{
+    right: 309px;
+    position: absolute;
+}
+
+.news{
+    right: 205px;
+    position: absolute;
+}
+
+.contact-us{
+    right: 60px;
+    position: absolute;
+}
+
+a { color: inherit; } 
+
+.Group-348-projects {
+    width: 22px;
+    height: 22px;
+    right: 502px;
+    object-fit: contain;
+    position: absolute;
+    visibility: hidden;
+}
+
+.Group-348-about {
+    width: 22px;
+    height: 22px;
+    right: 373px;
+    object-fit: contain;
+    position: absolute;
+    visibility: hidden;
+}
+
+.Group-348-news {
+    width: 22px;
+    height: 22px;
+    right: 245px;
+    object-fit: contain;
+    position: absolute;
+    visibility: hidden;
+}
+
+.Group-348-contact {
+    width: 22px;
+    height: 22px;
+    right: 138px;
+    object-fit: contain;
+    position: absolute;
+    visibility: hidden;
+}

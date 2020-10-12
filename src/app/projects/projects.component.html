@@ -1,0 +1,39 @@
+<div class="top-nav">
+    <div class="categories">
+        <div [style.font-weight]= "getFontWeight('all')" [style.color]="getColor('all')" (click)="setCategory('all')">ALL</div>
+        
+        <div [style.font-weight]= "getFontWeight('residential')" [style.color]="getColor('residential')" (click)="setCategory('residential')">RESIDENTIAL</div>
+        <div [style.font-weight]= "getFontWeight('commercial')" [style.color]="getColor('commercial')" (click)="setCategory('commercial')">COMMERCIAL</div>
+        <div [style.font-weight]= "getFontWeight('hospitality')" [style.color]="getColor('hospitality')" (click)="setCategory('hospitality')">HOSPITALITY</div>
+        <div [style.font-weight]= "getFontWeight('office')" [style.color]="getColor('office')" (click)="setCategory('office')">OFFICE</div>
+        <div [style.font-weight]= "getFontWeight('institutional')" [style.color]="getColor('institutional')" (click)="setCategory('institutional')">INSTITUTIONAL</div>
+        <div [style.font-weight]= "getFontWeight('intirior')" [style.color]="getColor('intirior')" (click)="setCategory('intirior')">INTIRIOR</div>
+        <div [style.font-weight]= "getFontWeight('master_planing')" [style.color]="getColor('master_planing')" (click)="setCategory('master_planing')">MASTER PLANNING</div>
+    </div>
+    <div class="line"></div>
+    <div class="Ellipse-61">
+        <img src="http://127.0.0.1:8887/img/other/assets_8. CASAA web project_2020-09-27/ellipse 61.svg" [style.visibility]="getVisibility('all')">
+        <img src="http://127.0.0.1:8887/img/other/assets_8. CASAA web project_2020-09-27/ellipse 61.svg" [style.visibility]="getVisibility('residential')">
+        <img src="http://127.0.0.1:8887/img/other/assets_8. CASAA web project_2020-09-27/ellipse 61.svg" [style.visibility]="getVisibility('commercial')">
+        <img src="http://127.0.0.1:8887/img/other/assets_8. CASAA web project_2020-09-27/ellipse 61.svg" [style.visibility]="getVisibility('hospitality')">
+        <img src="http://127.0.0.1:8887/img/other/assets_8. CASAA web project_2020-09-27/ellipse 61.svg" [style.visibility]="getVisibility('office')">
+        <img src="http://127.0.0.1:8887/img/other/assets_8. CASAA web project_2020-09-27/ellipse 61.svg" [style.visibility]="getVisibility('institutional')">
+        <img src="http://127.0.0.1:8887/img/other/assets_8. CASAA web project_2020-09-27/ellipse 61.svg" [style.visibility]="getVisibility('intirior')">
+        <img src="http://127.0.0.1:8887/img/other/assets_8. CASAA web project_2020-09-27/ellipse 61.svg" [style.visibility]="getVisibility('master_planing')">
+    </div>
+    
+</div>
+
+<div *ngIf="!project_selected">
+    <div class="projects_flex_box" >
+        <div *ngFor="let project of all_projects" class="oneProject">
+            <img src="http://127.0.0.1:8887/img/projects/{{project}}/1 .jpg" height="259px" width="454px">
+        </div> 
+    </div>
+</div>
+
+<div *ngIf="project_selected">
+</div>
+
+<app-bottom-bar></app-bottom-bar>
+

@@ -1,0 +1,226 @@
+.Rectangle-302 {
+    width: 100%;
+    padding: 0;
+    margin: 0%;
+    height: 100vh;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url('http://127.0.0.1:8887/img/Landing Page/1 .jpg');
+    background-size: cover;
+    background-position: center;
+    -webkit-animation: slide 30s linear infinite 0s;
+    -moz-animation: slide 30s linear infinite 0s;
+    -o-animation: slide 30s linear infinite 0s;
+    -ms-animation: slide 30s linear infinite 0s;
+    animation: slide 30s linear infinite 0s;
+}
+
+.banner-text-sub {
+    height: 90px;
+    top: 296px;
+    left: 120px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.94;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.48);
+    position: absolute;
+}
+
+.banner-text-main {
+    top: 372px;
+    left: 120px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 69px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.49;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    position: absolute;
+}
+
+.We-create {
+    top: 0px;
+    width: 200px;
+    height: 49px;
+    position: absolute;
+}
+
+.Contemporary-Design {
+    top: 37px;
+    width: 400px;
+    height: 49px;
+    position: absolute;
+}
+
+.for-Living {
+    top: 12px;
+    width: 400px;
+    height: 94px;
+    position: absolute;
+}
+
+.address {
+    top: 530px;
+    right: 60px;
+    width: 194px;
+    height: 38px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.36;
+    letter-spacing: normal;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.77);
+    position: absolute;
+}
+
+.mobile {
+    top: 612px;
+    right: 60px;
+    width: 270px;
+    height: 19px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.36;
+    letter-spacing: normal;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.77);
+    position: absolute;
+}
+
+.Rectangle-380 {
+    width: 550px;
+    height: 64px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    top: 688px;
+    right: 0px;
+    position: absolute;
+}
+
+.Group-328 {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    background: url('http://127.0.0.1:8887/img/other/assets_5. CASAA web Home page_2020-09-19/Group 328.svg');
+}
+
+.Group-327 {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    background: url('http://127.0.0.1:8887/img/other/assets_5. CASAA web Home page_2020-09-19/Group 327.svg');
+}
+
+.topic {
+    width: 231px;
+    height: 30px;
+    right: 60px;
+    top: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.36;
+    letter-spacing: normal;
+    text-align: right;
+    color: #ffffff;
+    position: absolute;
+  }
+
+.Project {
+    width: 39px;
+    height: 17px;
+    right: 60px;
+    top: 9px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.42;
+    letter-spacing: normal;
+    text-align: right;
+    color: #9c9c9c;
+    position: absolute;
+}
+
+.social-media {
+    bottom: 56px;
+    width: 69px;
+    height: 22px;
+    opacity: 0.72;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    position: absolute;
+}
+
+.facebook {
+    left: 64px;
+    position: absolute;
+}
+
+.instagram {
+    left: 209px;
+    position: absolute;
+}
+
+.twitter {
+    left: 369px;
+    position: absolute;
+}
+
+@-webkit-keyframes slide { 
+    0% { opacity: 1; -webkit-transform: scale(1); }
+    70% { opacity: 1; -webkit-transform: scale(1.1); }
+    100% { opacity: 1; -webkit-transform: scale(1.1); }
+}
+
+@-moz-keyframes slide { 
+    0% { opacity: 1; -webkit-transform: scale(1); }
+    70% { opacity: 1; -webkit-transform: scale(1.1); }
+    100% { opacity: 1; -webkit-transform: scale(1.1); }
+}
+
+@-o-keyframes slide { 
+    0% { opacity: 1; -webkit-transform: scale(1); }
+    70% { opacity: 1; -webkit-transform: scale(1.1); }
+    100% { opacity: 1; -webkit-transform: scale(1.1); }
+}
+
+@-ms-keyframes slide { 
+    0% { opacity: 1; -webkit-transform: scale(1); }
+    70% { opacity: 1; -webkit-transform: scale(1.1); }
+    100% { opacity: 1; -webkit-transform: scale(1.1); }
+}
+
+@keyframes slide { 
+    0% { opacity: 1; -webkit-transform: scale(1); }
+    70% { opacity: 1; -webkit-transform: scale(1.1); }
+    100% { opacity: 1; -webkit-transform: scale(1.1); }
+}

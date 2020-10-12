@@ -1,0 +1,31 @@
+{
+    "projects": {
+        "all": ["1 Office - Aegis Fund Management", "2 Institutional - Anuradhapura Gateways", "3 Interior - Assidua", "4 Interior - Caravan Pastry Outlet", "5 Office - Hatch Space", "6 Commercial - Jewellery Store", "7 Residential - 7.7 p  House", "8 Residential - Rupasinghe", "9 - Master planning Sanchi", "10 - Residential - wet", "11 Office - Demasu Group Shared Office Spaces", "12 Office - Office Building for Malkey Rent a Car", "13 Residenial and Hospitality - Suleiman Arab Mixed Development", "14 Residential - House at Polhengoda Terrace", "15 Residential - Lake Gregory Apartments", "16 Residential - Malalasekera", "17 Residential - Nesled Hideaway", "18 Residential - South Bolgoda Retreat"],
+        "residential": ["7 Residential - 7.7 p  House", "8 Residential - Rupasinghe", "10 - Residential - wet", "14 Residential - House at Polhengoda Terrace", "15 Residential - Lake Gregory Apartments", "16 Residential - Malalasekera", "17 Residential - Nesled Hideaway", "18 Residential - South Bolgoda Retreat"],
+        "commercial": ["6 Commercial - Jewellery Store"],
+        "hospitality": ["13 Residenial and Hospitality - Suleiman Arab Mixed Development"],
+        "office": ["1 Office - Aegis Fund Management", "5 Office - Hatch Space", "11 Office - Demasu Group Shared Office Spaces", "12 Office - Office Building for Malkey Rent a Car"],
+        "institutional": ["2 Institutional - Anuradhapura Gateways"],
+        "intirior": ["3 Interior - Assidua", "4 Interior - Caravan Pastry Outlet"],
+        "master_planing": ["9 - Master planning Sanchi"],
+        "projects": [
+            {
+                "id": "1 Office - Aegis Fund Management",
+                "name": "Aegis Fun Management Ltd",
+                "location": "Union Place, Colombo, Sri Lanka",
+                "type": "office",
+                "description": "<p>The design is for a fund management organization in terms of spatial planning and creating a contemporary plush office environment that would inspire its workers and motivate its investors.</p><p>The use of the primary colours of the organization and an open planned office environment with transparent separations to create the hierarchy was a fundamental design approach in creating the ambiance and feel the organization was pursuing.</p><p>Diffused lighting with purpose design lighting fixtures and designer contemporary furniture adds and compliments the primary goals of the organization in terms of its principal objectives of being a modern transparent.</p><p>Built Area : 6000 Sq.ft.</p>"
+            },
+            {
+                "id": "2 Institutional - Anuradhapura Gateways",
+                "name": "Entrance Gateways to the UNESCO World Heritage City of Anuradhapura",
+                "location": "Anuradhapura, Sri Lanka",
+                "type": "institutional",
+                "description": "<p>This competition winning design is an Entrance gateway to the sacred area of the Ancient Kingdom of Anuradhapura the first capital of current day Sri Lanka. The Entrance gateway is a point of transition designed to capture the mind of the entrant and transform his state of mind to a more focused mind-set with respect and reverence.</p><p>The entrance gateway designs consist of three gateways (selected from a total of six) that derive from a cohesive singular conceptual theme. However each gateway has also evolved through contextual realities and inspirations that are unique to each one.</p><p>Each gateway has historical, religious symbolism however also relating to contemporary Sri Lanka.</p><p> The three sites chosen from given option are;</p><p>1. Eastern Entrance – Lion Pillar</p><p>2. Southern Entrance – Deke Kanuwa</p><p>3. North Eastern entrance – Malvatu Oya</p><p>The concept of the entrance gateway project is</p><p> Celebration to Serenity.</p><p>Celebration to serenity is a celebration of a rich cultural heritage that created a civilisation which evolved through Buddhism. This celebration ultimately culminates in serenity, the essence of the Buddhist philosophy where on ultimately seeks serenity. </p>"
+            }
+        ]
+    }
+} 
+
+
+
