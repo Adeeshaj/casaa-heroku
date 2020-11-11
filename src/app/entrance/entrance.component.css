@@ -6,18 +6,37 @@
 }
 
 .slide {
+    position: relative;
     width: 100%;
     height: 100%;
-    position: relative;
-    background-image: url('/assets/img/Landing\ Page/1 .jpg');
-    background-size: cover;
-    background-position: center;
-    -webkit-animation: slide 30s linear infinite 0s;
-    -moz-animation: slide 30s linear infinite 0s;
-    -o-animation: slide 30s linear infinite 0s;
-    -ms-animation: slide 30s linear infinite 0s;
-    animation: slide 30s linear infinite 0s;
-}
+    overflow: hidden;
+} 
+.slide:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    display: block;
+    background-color: rgba(140, 22, 115, 0.2);
+} 
+
+/* .slide li span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transform: translateX( 700px );
+    background-image: url('/assets/img/Landing Page/1 .jpg' );
+    animation: slideTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+    webkit-animation: slideAnimation 40s linear infinite 0s;
+    -moz-animation: slideAnimation 60s linear infinite 0s;
+    -o-animation: slideAnimation 60s linear infinite 0s;
+    -ms-animation: slideAnimation 60s linear infinite 0s; 
+} */
 
 .banner-text-sub {
     height: 90px;
@@ -33,6 +52,7 @@
     text-align: left;
     color: rgba(255, 255, 255, 0.48);
     position: absolute;
+    z-index: 10;
 }
 
 .banner-text-main {
@@ -48,6 +68,7 @@
     text-align: left;
     color: #ffffff;
     position: absolute;
+    z-index: 10;
 }
 
 .We-create {
@@ -55,6 +76,7 @@
     width: 200px;
     height: 49px;
     position: absolute;
+    z-index: 10;
 }
 
 .Contemporary-Design {
@@ -62,6 +84,7 @@
     width: 400px;
     height: 49px;
     position: absolute;
+    z-index: 10;
 }
 
 .for-Living {
@@ -69,6 +92,7 @@
     width: 400px;
     height: 94px;
     position: absolute;
+    z-index: 10;
 }
 
 .address {
@@ -86,6 +110,7 @@
     text-align: right;
     color: rgba(255, 255, 255, 0.77);
     position: absolute;
+    z-index: 10;
 }
 
 .mobile {
@@ -103,6 +128,7 @@
     text-align: right;
     color: rgba(255, 255, 255, 0.77);
     position: absolute;
+    z-index: 10;
 }
 
 .Rectangle-380 {
@@ -113,6 +139,7 @@
     top: 688px;
     right: 0px;
     position: absolute;
+    z-index: 10;
 }
 
 .Group-328 {
@@ -120,6 +147,7 @@
     height: 56px;
     object-fit: contain;
     background: url('/assets/img/other/assets_5. CASAA web Home page_2020-09-19/Group 328.svg');
+    z-index: 10;
 }
 
 .Group-327 {
@@ -127,6 +155,7 @@
     height: 56px;
     object-fit: contain;
     background: url('/assets/img/other/assets_5. CASAA web Home page_2020-09-19/Group 327.svg');
+    z-index: 10;
 }
 
 .topic {
@@ -144,6 +173,7 @@
     text-align: right;
     color: #ffffff;
     position: absolute;
+    z-index: 10;
   }
 
 .Project {
@@ -161,6 +191,7 @@
     text-align: right;
     color: #9c9c9c;
     position: absolute;
+    z-index: 10;
 }
 
 .social-media {
@@ -178,49 +209,99 @@
     text-align: left;
     color: #ffffff;
     position: absolute;
+    z-index: 10;
 }
 
 .facebook {
     left: 64px;
     position: absolute;
+    z-index: 10;
 }
 
 .instagram {
     left: 209px;
     position: absolute;
+    z-index: 10;
 }
 
 .twitter {
     left: 369px;
     position: absolute;
+    z-index: 10;
 }
 
-@-webkit-keyframes slide { 
-    0% { opacity: 1; -webkit-transform: scale(1); }
-    70% { opacity: 1; -webkit-transform: scale(1.1); }
-    100% { opacity: 1; -webkit-transform: scale(1.1); }
+.card_part {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 7;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transform: translateX( 100vw );
+    background-size: cover;
+    background-position: center;
+    background-image: url( "/assets/img/Landing Page/1 .jpg");
+    animation: slideTransition 40s cubic-bezier(0, 0, 0, 0.97) infinite;
+  }
+
+.card_part.card_part-two {
+    z-index: 6;
+    background-image: url( "/assets/img/Landing Page/3 .jpg");
+    animation-delay: 10s;
+}
+  
+.card_part.card_part-three {
+    z-index: 5;
+    background-image: url( "/assets/img/Landing Page/4 .jpg");
+    animation-delay: 20s;
+}
+  
+.card_part.card_part-four {
+    z-index: 4;
+    background-image: url( "/assets/img/Landing Page/5 .jpg" );
+    animation-delay: 30s;
+}
+  
+
+/* .slide li:nth-child(5) span { 
+    animation-delay: 50s; 
+}
+.slide li:nth-child(6) span { 
+    animation-delay: 60s; 
+} */
+
+
+/*
+@-webkit-keyframes slideAnimation { 
+    0% { opacity: 1; -webkit-transform: scale(1); -webkit-transform: translateX( 0px ); }
+    65% { opacity: 1; -webkit-transform: scale(1.1); -webkit-transform: translateX( 0px ); }
+    70% { opacity: 1; -webkit-transform: scale(1.1); -webkit-transform: translateX( 100vw ); }
+    100% { opacity: 1; -webkit-transform: scale(1.1); -webkit-transform: translateX( 100vw ); }
 }
 
-@-moz-keyframes slide { 
-    0% { opacity: 1; -webkit-transform: scale(1); }
-    70% { opacity: 1; -webkit-transform: scale(1.1); }
-    100% { opacity: 1; -webkit-transform: scale(1.1); }
+@-moz-keyframes slideAnimation { 
+    0% { opacity: 1; -webkit-transform: scale(1); transform: translateX( 0 ); }
+    70% { opacity: 1; -webkit-transform: scale(1.1); transform: translateX( 100vw ); }
+    100% { opacity: 1; -webkit-transform: scale(1.1); transform: translateX( 100vw );  }
 }
 
-@-o-keyframes slide { 
-    0% { opacity: 1; -webkit-transform: scale(1); }
-    70% { opacity: 1; -webkit-transform: scale(1.1); }
-    100% { opacity: 1; -webkit-transform: scale(1.1); }
+@-o-keyframes slideAnimation { 
+    0% { opacity: 1; -webkit-transform: scale(1); transform: translateX( 0 ); }
+    70% { opacity: 1; -webkit-transform: scale(1.1); transform: translateX( 100vw ); }
+    100% { opacity: 1; -webkit-transform: scale(1.1); transform: translateX( 100vw ); }
 }
 
-@-ms-keyframes slide { 
-    0% { opacity: 1; -webkit-transform: scale(1); }
-    70% { opacity: 1; -webkit-transform: scale(1.1); }
-    100% { opacity: 1; -webkit-transform: scale(1.1); }
-}
+@-ms-keyframes slideAnimation { 
+    0% { opacity: 1; -webkit-transform: scale(1); transform: translateX( 0 ); }
+    70% { opacity: 1; -webkit-transform: scale(1.1); transform: translateX( 100vw ); }
+    100% { opacity: 1; -webkit-transform: scale(1.1); transform: translateX( 100vw ); }
+} */
 
-@keyframes slide { 
-    0% { opacity: 1; -webkit-transform: scale(1); }
-    70% { opacity: 1; -webkit-transform: scale(1.1); }
-    100% { opacity: 1; -webkit-transform: scale(1.1); }
-}
+@keyframes slideTransition {
+    3% { transform: translateX( 0 ) scale(1) ; }
+    25% { transform: translateX( 0 ) scale(1.2); }
+    28% {  transform: translateX( -100vw ) scale(1); }
+    100% { transform: translateX( -100vw ) scale(1); }
+  }

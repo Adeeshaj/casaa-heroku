@@ -1,5 +1,4 @@
 const express = require('express');
-const path = require('path');
 
 const _port = process.env.PORT || 4100;
 const _app_folder = 'dist/casaa';

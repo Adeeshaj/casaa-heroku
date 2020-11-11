@@ -1,3 +1,4 @@
+import { Time } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,19 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EntranceComponent implements OnInit {
   CURRENT_SLIDE: number;
+  TIMEOUT: number;
+  StartTime: number;
 
   constructor() { }
 
   ngOnInit(): void {
-    this.CURRENT_SLIDE = 1 
+    this.CURRENT_SLIDE = 1
+    this.TIMEOUT = 10
+    this.StartTime = new Date().getTime()
   }
 
   getUrl(slide){
-    if(slide == 'left'){
-      return "url('/assets/img/Landing Page/1 .jpg')";
-    } if (slide == 'right') {
-      return "url('/assets/img/Landing Page/2 .mp4')";
-    }
+    if(this.isTimeElapsed(this.StartTime)){
+      if(slide == 'right' || slide == 'next'){
+        return this.getUrlById(this.right());
+      } else if (slide == 'left') {
+        return this.getUrlById(this.left());
+      }
+    } 
   }
 
   getUrlById(id){
@@ -36,12 +43,11 @@ export class EntranceComponent implements OnInit {
     } else if(id == 6) {
       return "url('/assets/img/Landing Page/6 .mp4')";
     } else {
-      return "url('/assets/img/Landing Page/1 .tif')";
+      return "url('/assets/img/Landing Page/1 .jpg')";
     }
   }
   
   right(){
-    
     this.CURRENT_SLIDE +=1
     if (this.CURRENT_SLIDE<=6){
       console.log(this.getUrlById(this.CURRENT_SLIDE));
@@ -69,7 +75,7 @@ export class EntranceComponent implements OnInit {
       'width': '1366px', 
       'height':'768px', 
       'position': 'absolute',
-      'left': '0px',
+      'left': '-1366px',
       'top': '0px',
       'z-index': 0
     }
@@ -83,9 +89,18 @@ export class EntranceComponent implements OnInit {
       'width': '1366px', 
       'height':'768px', 
       'position': 'absolute',
-      'left': '1366px',
+      'left': '0px',
       'top': '0px',
       'z-index': 1
+    }
+  }
+
+  isTimeElapsed(start){
+    var elapsed = new Date().getTime() - start;
+    if(elapsed > this.TIMEOUT){
+      return true;
+    } else {
+      return false;
     }
   }
 }

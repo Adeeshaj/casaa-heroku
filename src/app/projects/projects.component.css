@@ -89,3 +89,88 @@
     z-index: 2;
     background-color: #ffffff;
 }
+
+.topic {
+    width: 200px;
+    height: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.59;
+    letter-spacing: normal;
+    text-align: left;
+    color: #12131c;
+    top: 223px;
+    left: 121px;
+    position: absolute;
+}
+
+.projects_flex_box > div > .project {
+    width: 450px;
+    height: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.42;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    left: 24px;
+    top: -44px;
+    position: relative;
+}
+
+.projects_flex_box > div > .location {
+    width: 450px;
+    height: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.42;
+    letter-spacing: normal;
+    text-align: left;
+    color: #bdbdbf;
+    left: 24px;
+    top: -37px;
+    position: relative;
+}
+
+.project_type {
+    width: 75px;
+    height: 19px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.36;
+    letter-spacing: normal;
+    text-align: left;
+    color: #5d5d5d;
+    top: 203px;
+    left:128px;
+    position: absolute;
+}
+
+.project_name {
+    width: 321px;
+    height: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.59;
+    letter-spacing: normal;
+    text-align: left;
+    color: #12131c;
+    top: 226px;
+    left: 128px;
+    position: absolute;
+}

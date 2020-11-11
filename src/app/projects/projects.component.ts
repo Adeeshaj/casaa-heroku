@@ -9,16 +9,16 @@ import * as Projects from '../../assets/projects.json';
 export class ProjectsComponent implements OnInit {
   category: string;
   project_selected: boolean;
-  all_projects: Array<string>;
+  all_projects: Array<object>;
+  selected_project: object
 
   constructor() { 
   }
 
   ngOnInit(): void {
-    this.category = "all"
+    this.category = "All"
     this.project_selected = false
-    this.all_projects = Projects.projects.all
-    console.log(this.all_projects);
+    this.all_projects = Projects.projects.projects
   }
 
   setCategory(category){
@@ -46,6 +46,22 @@ export class ProjectsComponent implements OnInit {
       return 'visible';
     } else {
       return 'hidden';
+    }
+  }
+
+  selectProject(project){
+    this.project_selected = true
+    this.selected_project = project
+    console.log(this.selected_project)
+  }
+
+  getProjectVisibility(project_type){
+    if (this.category == 'All'){
+      return 'inherit';
+    } else if(project_type == this.category){
+      return 'inherit';
+    } else {
+      return 'none';
     }
   }
 }
