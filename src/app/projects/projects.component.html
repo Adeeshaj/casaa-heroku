@@ -33,12 +33,96 @@
             <div class="location" [style.display]="getProjectVisibility(project.type)">{{project.location}}</div>
         </div> 
     </div>
+    <app-bottom-bar></app-bottom-bar>
 </div>
 
 <div *ngIf="project_selected">
+
     <div class="project_type">{{selected_project.type}}</div>
     <div class="project_name">{{selected_project.name}}</div>
+    <div class="info">
+        <div>
+            <div class="info-topic">Clients</div>
+            <div class="info-content">{{selected_project.clients}}</div>
+        </div>
+        <div>
+            <div class="info-topic">Location</div>
+            <div class="info-content">{{selected_project.location}}</div>
+        </div>
+        <div>
+            <div class="info-topic">Project size</div>
+            <div class="info-content">{{selected_project.project_size}}</div>
+        </div>
+        <div>
+            <div class="info-topic">Plot size</div>
+            <div class="info-content">{{selected_project.plot_size}}</div>
+        </div>
+        <div>
+            <div class="info-topic">Status</div>
+            <div class="info-content">{{selected_project.status}}</div>
+        </div>
+    </div>
+
+    <div class="slide-main">
+        <ngx-slick-carousel class="carousel" 
+            #slickModal2="slick-carousel" 
+            [config]="slideConfigFor" 
+            (init)="slickInit($event)"
+            (breakpoint)="breakpoint($event)"
+            (afterChange)="afterChange($event)"
+            (beforeChange)="beforeChange($event)">
+                <div ngxSlickItem *ngFor="let image of selected_project.images">
+                    <img src="assets/img/projects/{{selected_project.id}}/{{image}}" alt="" height="768px" width="100%">
+                </div>
+        </ngx-slick-carousel>
+        <div (click)="next()" class="Rectangle-392 upper-right"><img src="assets/img/other/assets_5. CASAA web Home page_2020-09-19/Group 327.svg" class="center"></div>
+        <div (click)="prev()" class="Rectangle-392 upper-left"><img src="assets/img/other/assets_5. CASAA web Home page_2020-09-19/Group 328.svg" class="center"></div>
+    </div>
+    <div class="slide-sub">
+        <ngx-slick-carousel class="carousel" 
+            #slickModal="slick-carousel" 
+            [config]="slideConfigNav" 
+            (init)="slickInit($event)"
+            (breakpoint)="breakpoint($event)"
+            (afterChange)="afterChange($event)"
+            (beforeChange)="beforeChange($event)">
+                <div ngxSlickItem *ngFor="let image of selected_project.images" class="slide-sub-image">
+                    <img src="assets/img/projects/{{selected_project.id}}/{{image}}" alt="" height="97px" width="173px">
+                </div>
+        </ngx-slick-carousel>   
+        
+        <div (click)="next()" class="Rectangle-392 lower-right"><img src="assets/img/other/assets_5. CASAA web Home page_2020-09-19/Group 327.svg" class="center"></div>
+        <div (click)="prev()" class="Rectangle-392 lower-left"><img src="assets/img/other/assets_5. CASAA web Home page_2020-09-19/Group 328.svg" class="center"></div>
+    </div>
+    
+    <div class="description" *ngFor="let para of selected_project.description">
+        <p>{{para}}</p>
+    </div>
+    <div class="bottom-background">
+        <img src="assets/img/projects/{{selected_project.id}}/2 .jpg" width ="100%"  height="768px">
+        <div class="Rectangle-380 right">
+            <img src="assets/img/other/assets_5. CASAA web Home page_2020-09-19/Group 327.svg" class="Group-327" (click)="selectProject(getNextProject())">
+            <div class="topic topic-right">{{nextProject.name}}</div>
+            <div class="Project Project-right">project</div>
+        </div>
+
+        <div class="Rectangle-380 left">
+            <img src="assets/img/other/assets_5. CASAA web Home page_2020-09-19/Group 328.svg" class="Group-328" (click)="selectProject(getPrevProject())">
+            <div class="topic topic-left">{{prevProject.name}}</div>
+            <div class="Project Project-left">project</div>
+        </div>
+    </div>
+    <!-- bottom bar -->
+    <div class="bar">
+        <div class="social-media">
+            <div class="facebook">Facebook</div>
+            <div class="instagram">Instagram</div>
+            <div class="twitter">Twitter</div>
+            <div class="moblie">+94 (0) 77 392 7257  / +94 (0) 11 280 7129</div>
+            <div class="address">85/7E1, Senanayake Mawatha Nawala, Sri Lanka</div>
+        </div>
+    </div>
 </div>
 
-<app-bottom-bar></app-bottom-bar>
+
 

@@ -153,9 +153,9 @@
     letter-spacing: normal;
     text-align: left;
     color: #5d5d5d;
-    top: 203px;
+    top: 213px;
     left:128px;
-    position: absolute;
+    position: relative;
 }
 
 .project_name {
@@ -172,5 +172,290 @@
     color: #12131c;
     top: 226px;
     left: 128px;
+    position: relative;
+}
+
+.info {
+    display: flex;
+    top: 310px;
+    position: relative;
+    flex-wrap: nowrap;
+    left: 128px;
+}
+
+.info > div {
+    width: 250px;
+    height: 24px;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;   
+}
+
+.info-topic {
+    width: 78px;
+    height: 18px;
+    font-weight: 800;
+    color: #12131c;
+}
+
+.info-content {
+    width: 102px;
+    height: 18px;
+    font-weight: normal;
+    color: #5d5d5d;
+}
+
+
+.slide-main {
+    top: 430px;
+    height: 768px;
+    position: relative;
+}
+
+.slide-main-img {
+    width: 100vw;
+}
+
+.slide-sub {
+    top: 500px;
+    height: 97px;
+    position: relative;
+    
+}
+
+.slide-sub-image {
+    margin: 0 2px;
+    object-fit: cover;
+}
+
+.Rectangle-392 {
+    width: 97px;
+    height: 97px;
+    backdrop-filter: blur(15px);
+    background-color: transparent;
+}
+  
+.upper-left {
+    position: absolute;
+    margin: 0 436px 284px 0;
+    top: 336px;
+    left: 0px;
+}
+
+.upper-right {
+    position: absolute;
+    margin: 0 0 284px 435px;
+    top: 336px;
+    right: 0px;
+}
+
+.lower-left {
+    position: absolute;
+    margin: 0 1172px 0 0;
+    top:0px;
+    left: 0px;
+}
+
+.lower-right {
+    position: absolute;
+    margin: 0 0 0 1172px;
+    top:0px;
+    right:0px;
+}
+
+.center {
+    display: block;
+    margin-top: 24.25px;
+    margin-bottom: 24.25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+}
+
+.description {
+    width: 719px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.42;
+    letter-spacing: normal;
+    text-align: left;
+    color: #5d5d5d;
+    top: 550px;
+    position: relative;
+}
+
+.description > p {
+    position: relative;
+}
+
+.bottom-background {
+    width: 100%;
+    height: 768px;
+    margin: 72px 0 0;
+    padding: 572px 0 0;
+    object-fit: cover;
+}
+
+.Rectangle-380 {
+    top: 2405px;
+    position: absolute;
+    width: 530px;
+    height: 64px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: transparent;
+    z-index: 10;
+}
+
+.topic {
+    width: 368px;
+    height: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.36;
+    letter-spacing: normal;
+    color: #ffffff;
+    position: absolute;
+    z-index: 10;
+  }
+
+.Project {
+    width: 39px;
+    height: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.42;
+    letter-spacing: normal;
+    color: #9c9c9c;
+    position: absolute;
+    z-index: 10;
+}
+
+.Project-left {
+    right: 42px;
+    top: 9px;
+    text-align: right;
+}
+
+.Project-right {
+    left: 42px;
+    top: 9px;
+    text-align: left;
+}
+
+.topic-left {
+    right: 42px;
+    top: 24px;
+    text-align: right;
+}
+
+.topic-right {
+    left: 42px;
+    top: 24px;
+    text-align: left;
+}
+
+.right {
+    position: absolute;
+    right: 0px;
+}
+
+.left {
+    position: absolute;
+    left: 0px;
+}
+
+.Group-328 {
+    position: absolute;
+    left: 38px;
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    background: url('/assets/img/other/assets_5. CASAA web Home page_2020-09-19/Group 328.svg');
+    z-index: 10;
+}
+
+.Group-327 {
+    position: absolute;
+    right: 38px;
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    background: url('/assets/img/other/assets_5. CASAA web Home page_2020-09-19/Group 327.svg');
+    z-index: 10;
+}
+
+/* bottom bar */
+
+.bar {
+    top: 2541px;
+    left: 0px;
+    width: 100%;
+    height: 130px;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 4;
+}
+
+.social-media {
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: left;
+    color: #12131c;
+}
+
+.facebook {
+    bottom: 56px;
+    left: 64px;
     position: absolute;
 }
+
+.instagram {
+    bottom: 56px;
+    left: 209px;
+    position: absolute;
+}
+
+.twitter {
+    bottom: 56px;
+    left: 369px;
+    position: absolute;
+}
+
+.moblie {
+    bottom: 56px;
+    right: 342px;
+    position: absolute;
+}
+
+.address {
+    bottom: 56px;
+    right: 60px;
+    position: absolute;
+    width: 194px;
+}
+
+
+

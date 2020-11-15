@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+    <g>
+        <g>
+            <path fill="#12131c" stroke="#12131c" d="M0 0l7 6.353L0 12z" transform="translate(-883 -615) rotate(180 457.5 324.5)"/>
+        </g>
+        <path fill="none" d="M0 0H56V56H0z" transform="translate(-883 -615) translate(883 615)"/>
+    </g>
+</svg>

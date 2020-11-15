@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
@@ -33,6 +35,7 @@ import { BottomBarComponent } from './bottom-bar/bottom-bar.component';
       {path: 'news', component: NewsComponent},
       {path: 'contact', component: ContactComponent},
     ]),
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
