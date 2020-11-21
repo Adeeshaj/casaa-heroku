@@ -1,0 +1,53 @@
+{
+    "people":[
+        {
+            "id": "Saliya",
+            "name":"Saliya Hathurusinghe",
+            "position": "Architectural designer",
+            "img": "saliya.jpg",
+            "description": ["Saliya Hathurusinghe is an Architectural Designer and a Graduate member of the Sri Lanka Institute of Architects. Kasun completed his architectural studies at the University of Moratuwa, with a Bachelours degree in Architecture with Honours.  Kasun has 2 years of Industry experience in Architecture and Master planning, 3D Visualisation and Model Making"]
+        },
+        {
+            "id": "Chaminda",
+            "name":"Chaminda Dharmawardane",
+            "position": "Head CAD technician",
+            "img": "chaminda.jpg",
+            "description": ["Chaminda Dharmawardane is a qualified electrical CAD technician with work experience in India and Sri Lanka. Having studied at Maradana Technical College in Colombo, Sri Lanka chaminda has over 15 years of industry experience as an Architectural CAD Technician."]
+        },
+        {
+            "id": "Isurunath",
+            "name":"Isurunath Bulankulame",
+            "position": "Principal Architect",
+            "img": "isurunath.jpg",
+            "description": ["Isurunath Bulankulame is a Chartered Architect and an Associate Member of the Sri Lanka Institute of Architects. Isurunath completed his Bachelour of Science degree in Architecture with honours from the University of East London, UK and his Master of Science degree in Architecture (Commended) from the University of Moratuwa in Sri Lanka.", "Isurunath is the recipient of the prestigious “Dr. Justin Samarasekare Award for Architecture” for “Climate sensitive design” from the University of Moratuwa in Sri Lanka.  Having worked in Sri Lanka, India, United Kingdom and Japan. Isurunath approaches architecture with a strong intuitive design vision based on bespoke concepts for each project. A special attribute in his designs is creating undulating expansive space in very tightly defined environments. Isurunath has also served in the capacity of visiting lecturer and design examinations critique at the Faculty of Architecture, University of Moratuwa and the Colombo School of Architecture in Sri Lanka."]
+        },
+        {
+            "id": "Kasun",
+            "name":"Kasun Gunathilaka",
+            "position": "Architectural designer",
+            "img": "kasun.jpg",
+            "description": ["Kasun Gunathilaka is an Architectural Designer and a Graduate member of the Sri Lanka Institute of Architects. Kasun completed his architectural studies at the University of Moratuwa, with a Bachelours degree in Architecture with Honours.  Kasun has 3 years of Industry experience in Architecture and Master planning, 3D Visualisation and Model Making"]
+        },
+        {
+            "id": "Kavinda",
+            "name":"Kavinda Edippily",
+            "position": "Associate Architect/ Interior Designer",
+            "img": "kavinda.jpg",
+            "description": ["Kavinda Edippily is a Chartered Architect and an Associate member of the Sri Lanka Institute of Architects. Kavinda completed his architectural studies at the University of West of England, UK with a Bachelour of Science in Architecture and a Masters in Architecture and Environmental design. Kavinda has 7 years of Industry experience in Architecture and Interior design, with a specialty in Environmental Architecture."]
+        },
+        {
+            "id": "Nadun",
+            "name":"Nadun Gunawardana",
+            "position": "Architectural designer",
+            "img": "nadun.jpg",
+            "description": ["Nadun Gunawardane is an Architectural Designer and a Graduate member of the Sri Lanka Institute of Architects. Nadun completed his architectural studies at the University of Moratuwa, with a Bachelours degree in Architecture with Honours.  Nadun has 3 years of Industry experience in Architecture and Master planning, 3D Visualisation and Model Making"]
+        },
+        {
+            "id": "Pramitha",
+            "name":"Pramitha Mallawaratchie",
+            "position": "Principal Architect",
+            "img": "pramitha.jpg",
+            "description": ["Pramitha Mallawaratchie is a chartered Architect and an Associate member of the Sri Lanka Institute of Architects. Pramitha completed her architectural studies at the City School of Architecture in Sri Lanka Part 1 and Part 2. She has over 10 years of industry experience. Her specialization includes interior design and project management. Pramitha has experience working in Sri Lanka and India."]
+        }
+    ]
+}

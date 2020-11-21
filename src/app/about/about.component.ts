@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import * as People from '../../assets/people.json';
+import { SlickCarouselComponent } from 'ngx-slick-carousel';
 
 @Component({
   selector: 'app-about',
@@ -7,13 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
   category: string;
-  member: string;
+  member: object;
+  people: Array<object>;
+  @ViewChild('slickModal') slickModal: SlickCarouselComponent;
+
+  slideConfig = {
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    dots: false,
+    centerMode: false,
+    arrows: false
+  };
 
   constructor() { }
 
   ngOnInit(): void {
     this.category = "CASSA"
-    this.member = "Isurunath Bulankulame"
+    this.people = People.people
+    this.member = this.people[2]
   }
 
   setCategory(category){
@@ -21,9 +34,7 @@ export class AboutComponent implements OnInit {
   }
 
   setMember(member){
-    console.log("xx")
     this.member = member
-    console.log(this.member)
   }
   
   getFontWeight(component){
@@ -51,7 +62,7 @@ export class AboutComponent implements OnInit {
   }
 
   getFontWeightMember(component){
-    if(component == this.member){
+    if(component == this.member['id']){
       return 'bold';
     } else {
       return 'normal';
@@ -59,7 +70,7 @@ export class AboutComponent implements OnInit {
   }
 
   getColorMember(component){
-    if(component == this.member){
+    if(component == this.member['id']){
       return '#12131c';
     } else {
       return '#bebebe';
@@ -67,10 +78,37 @@ export class AboutComponent implements OnInit {
   }
 
   getVisibilityMember(component){
-    if(component == this.member){
+    
+    if(component == this.member['id']){
       return 'visible';
     } else {
       return 'hidden';
     }
+  }
+
+  slickInit(e) {
+    console.log('slick initialized');
+  }
+  
+  breakpoint(e) {
+    console.log('breakpoint');
+  }
+  
+  afterChange(e) {
+    
+    console.log('afterChange');
+  }
+  
+  beforeChange(e) {
+    console.log('beforeChange');
+  }
+
+  next() {
+    console.log("next")
+    this.slickModal.slickNext();
+  }
+  
+  prev() {
+    this.slickModal.slickPrev();
   }
 }

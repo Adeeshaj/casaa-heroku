@@ -80,23 +80,43 @@
     </div>
 
     <div class="section">
-        <div class="team-nav">
+        <!--  -->
+        <!-- <div class="team-nav" *ngFor="let person of people">
             <div class="members">
-                <div [style.font-weight]= "getFontWeightMember('Kasun Gunathilaka')" [style.color]="getColorMember('Kasun Gunathilaka')" (click)="setMember('Kasun Gunathilaka')">Kasun Gunathilaka</div>
-                <div [style.font-weight]= "getFontWeightMember('Kavinda Edippily')" [style.color]="getColorMember('Kavinda Edippily')" (click)="setMember('Kavinda Edippily')">Kavinda Edippily</div>
-                <div [style.font-weight]= "getFontWeightMember('Isurunath Bulankulame')" [style.color]="getColorMember('Isurunath Bulankulame')" (click)="setMember('Isurunath Bulankulame')">Isurunath Bulankulame</div>
-                <div [style.font-weight]= "getFontWeightMember('Pramitha Mallawaratchie')" [style.color]="getColorMember('Pramitha Mallawaratchie')" (click)="setMember('Pramitha Mallawaratchie')">Pramitha Mallawaratchie</div>
-                <div [style.font-weight]= "getFontWeightMember('Nadun Gunawardana')" [style.color]="getColorMember('Nadun Gunawardana')" (click)="setMember('Nadun Gunawardana')">Nadun Gunawardana</div>
+                <div [style.font-weight]= "getFontWeightMember('person.id')" [style.color]="getColorMember('person.id')" (click)="setMember('person.id')">{{person.name}}</div>
             </div>
-            <div class="lineMember"></div>
             <div class="Ellipse-61">
-                <img src="assets/img/other/assets_10. CASAA web About us_2020-10-07/Ellipse 61.svg" [style.visibility]="getVisibilityMember('Kasun Gunathilaka')">
-                <img src="assets/img/other/assets_10. CASAA web About us_2020-10-07/Ellipse 61.svg" [style.visibility]="getVisibilityMember('Kavinda Edippily')">
-                <img src="assets/img/other/assets_10. CASAA web About us_2020-10-07/Ellipse 61.svg" [style.visibility]="getVisibilityMember('Isurunath Bulankulame')">
-                <img src="assets/img/other/assets_10. CASAA web About us_2020-10-07/Ellipse 61.svg" [style.visibility]="getVisibilityMember('Pramitha Mallawaratchie')">
-                <img src="assets/img/other/assets_10. CASAA web About us_2020-10-07/Ellipse 61.svg" [style.visibility]="getVisibilityMember('Nadun Gunawardana')">
+                <img src="assets/img/other/assets_10. CASAA web About us_2020-10-07/Ellipse 61.svg" [style.visibility]="getVisibilityMember('person.id')">
             </div>
+        </div> -->
+        <div class="team-nav">
+            <div class="lineMember"></div>
+            <ngx-slick-carousel class="carousel" 
+                #slickModal="slick-carousel" 
+                [config]="slideConfig" 
+                (init)="slickInit($event)"
+                (breakpoint)="breakpoint($event)"
+                (afterChange)="afterChange($event)"
+                (beforeChange)="beforeChange($event)">
+                <div ngxSlickItem  *ngFor="let person of people" height="300px" (click)="setMember(person)">
+                    <img src="assets/img/about/{{person.img}}" class="slider-img" >
+                    <div class="members" [style.font-weight]= "getFontWeightMember(person.id)" [style.color]="getColorMember(person.id)" >{{person.name}}</div>
+                    <img class="dot-member" src="assets/img/other/assets_10. CASAA web About us_2020-10-07/Ellipse 61.svg" [style.visibility]="getVisibilityMember(person.id)">
+                </div>
+            </ngx-slick-carousel> 
+            <div (click)="next()" class="Rectangle-392 right"><img src="assets/img/other/assets_5. CASAA web Home page_2020-09-19/Group 327.svg" class="center"></div>
+            <div (click)="prev()" class="Rectangle-392 left"><img src="assets/img/other/assets_5. CASAA web Home page_2020-09-19/Group 328.svg" class="center"></div>
+        
         </div>
+        <div class="member-main">
+            <img class="member-img" src="assets/img/about/{{member['img']}}">
+            <div class="member-position">{{member['position']}}</div>
+            <div class="member-name">{{member['name']}}</div>
+            <div class="member-description" *ngFor="let para of member['description']">{{para}}</div>
+        </div>
+        
+         
+       
         <app-bottom-bar></app-bottom-bar>
     </div>
     

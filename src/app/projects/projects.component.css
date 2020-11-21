@@ -16,7 +16,7 @@
     text-align: center;
     color: #bebebe;
     display: flex;
-    top: 133px;
+    top: 17.31vh;
     position: relative;
     flex-wrap: nowrap;
     margin-left: auto;
@@ -30,7 +30,7 @@
 .line{
     width: 85%;
     height: 1px;
-    top: 170.5px;
+    top: 19.25vh;
     border-bottom: 1px solid #bebebe;
     position: relative;
     margin-left: auto;
@@ -38,29 +38,20 @@
     z-index: 0;
 }
 
-.Ellipse-61 {    
+.categories > div > img{    
     height: 7px;
     object-fit: contain;
     background: transparent;
     width: 85%;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    top: 167px;
+    top: 0.84vh;
     position: relative;
-    flex-wrap: nowrap;
     margin-left: auto;
     margin-right: auto;
-}
-
-.Ellipse-61 > img {
     z-index: 1;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .projects_flex_box {
-    top: 281px;
+    top: 36.58vh;
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     -ms-box-orient: horizontal;
@@ -77,8 +68,15 @@
     overflow-y: auto;
 }   
 
-.projects_flex_box > div {
-    margin: 2px;
+.projects_flex_box > div > div{
+    margin-left: 1px;
+    margin-bottom: 1px;
+    height: 18.96vw;
+}
+
+.projects_flex_box > div > div >img {
+    width: 33.23vw;
+    height: 18.96vw;
 }
 
 .footer {
@@ -90,7 +88,7 @@
     background-color: #ffffff;
 }
 
-.topic {
+.topic-main {
     width: 200px;
     height: 30px;
     font-family: 'Open Sans', sans-serif;
@@ -102,13 +100,13 @@
     letter-spacing: normal;
     text-align: left;
     color: #12131c;
-    top: 223px;
-    left: 121px;
+    top: 29.03vh;
+    left: 15.75vh;
     position: absolute;
 }
 
-.projects_flex_box > div > .project {
-    width: 450px;
+.projects_flex_box > div > div >.project {
+    width: 31.47vw;
     height: 17px;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
@@ -119,13 +117,13 @@
     letter-spacing: normal;
     text-align: left;
     color: #ffffff;
-    left: 24px;
-    top: -44px;
+    left: 1.75vw;
+    top: -3.22vw;
     position: relative;
 }
 
-.projects_flex_box > div > .location {
-    width: 450px;
+.projects_flex_box > div > div > .location {
+    width: 31.47vw;
     height: 17px;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
@@ -136,10 +134,12 @@
     letter-spacing: normal;
     text-align: left;
     color: #bdbdbf;
-    left: 24px;
-    top: -37px;
+    left: 1.75vw;
+    top: -3.13vw;
     position: relative;
 }
+
+/* project selected */
 
 .project_type {
     width: 75px;
@@ -153,38 +153,37 @@
     letter-spacing: normal;
     text-align: left;
     color: #5d5d5d;
-    top: 213px;
-    left:128px;
-    position: relative;
+    top: 26.43vh;
+    left: 9.37vw;
+    position: absolute;
 }
 
 .project_name {
-    width: 321px;
+    width: 50vh;
     height: 30px;
     font-family: 'Open Sans', sans-serif;
     font-size: 22px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 2.59;
     letter-spacing: normal;
     text-align: left;
     color: #12131c;
-    top: 226px;
-    left: 128px;
-    position: relative;
+    top: 29.42vh;
+    left: 9.37vw;
+    position: absolute;
 }
 
 .info {
     display: flex;
-    top: 310px;
+    top: 40.62vh;
     position: relative;
     flex-wrap: nowrap;
-    left: 128px;
+    left: 9.37vw;
 }
 
 .info > div {
-    width: 250px;
+    width: 24.45vw;
     height: 24px;
     text-align: left;
     font-family: 'Open Sans', sans-serif;
@@ -211,7 +210,7 @@
 
 
 .slide-main {
-    top: 430px;
+    top: 55.98vh;
     height: 768px;
     position: relative;
 }
@@ -301,13 +300,15 @@
 .bottom-background {
     width: 100%;
     height: 768px;
-    margin: 72px 0 0;
-    padding: 572px 0 0;
+    margin-top: 72px;
+    padding-top: 572px;
+    bottom: 20px;
+    position: relative;
     object-fit: cover;
 }
 
 .Rectangle-380 {
-    top: 2405px;
+    bottom: 32px;
     position: absolute;
     width: 530px;
     height: 64px;
@@ -404,12 +405,12 @@
 /* bottom bar */
 
 .bar {
-    top: 2541px;
+    bottom: 0px;
     left: 0px;
     width: 100%;
     height: 130px;
     background-color: #ffffff;
-    position: absolute;
+    position: relative;
     z-index: 4;
 }
 

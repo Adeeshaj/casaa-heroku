@@ -1,36 +1,51 @@
 <div class="top-nav">
     <div class="categories">
-        <div [style.font-weight]= "getFontWeight('All')" [style.color]="getColor('All')" (click)="setCategory('All')">ALL</div>
-        
-        <div [style.font-weight]= "getFontWeight('Residential')" [style.color]="getColor('Residential')" (click)="setCategory('Residential')">RESIDENTIAL</div>
-        <div [style.font-weight]= "getFontWeight('Commercial')" [style.color]="getColor('Commercial')" (click)="setCategory('Commercial')">COMMERCIAL</div>
-        <div [style.font-weight]= "getFontWeight('Hospitality')" [style.color]="getColor('Hospitality')" (click)="setCategory('Hospitality')">HOSPITALITY</div>
-        <div [style.font-weight]= "getFontWeight('Office')" [style.color]="getColor('Office')" (click)="setCategory('Office')">OFFICE</div>
-        <div [style.font-weight]= "getFontWeight('Institutional')" [style.color]="getColor('Institutional')" (click)="setCategory('Institutional')">INSTITUTIONAL</div>
-        <div [style.font-weight]= "getFontWeight('Interior')" [style.color]="getColor('Interior')" (click)="setCategory('Interior')">INTERIOR</div>
-        <div [style.font-weight]= "getFontWeight('Master Planning')" [style.color]="getColor('Master Planning')" (click)="setCategory('Master Planning')">MASTER PLANNING</div>
+        <div>
+            <div [style.font-weight]= "getFontWeight('All')" [style.color]="getColor('All')" (click)="setCategory('All')">ALL</div>
+            <img src="assets/img/other/assets_8. CASAA web project_2020-09-27/Ellipse 61.svg" [style.visibility]="getVisibility('All')">
+        </div>
+        <div>
+            <div [style.font-weight]= "getFontWeight('Residential')" [style.color]="getColor('Residential')" (click)="setCategory('Residential')">RESIDENTIAL</div>
+            <img src="assets/img/other/assets_8. CASAA web project_2020-09-27/Ellipse 61.svg" [style.visibility]="getVisibility('Residential')">
+        </div>
+        <div>
+            <div [style.font-weight]= "getFontWeight('Commercial')" [style.color]="getColor('Commercial')" (click)="setCategory('Commercial')">COMMERCIAL</div>
+            <img src="assets/img/other/assets_8. CASAA web project_2020-09-27/Ellipse 61.svg" [style.visibility]="getVisibility('Commercial')">
+        </div>
+        <div>
+            <div [style.font-weight]= "getFontWeight('Hospitality')" [style.color]="getColor('Hospitality')" (click)="setCategory('Hospitality')">HOSPITALITY</div>
+            <img src="assets/img/other/assets_8. CASAA web project_2020-09-27/Ellipse 61.svg" [style.visibility]="getVisibility('Hospitality')">
+        </div>
+        <div>
+            <div [style.font-weight]= "getFontWeight('Office')" [style.color]="getColor('Office')" (click)="setCategory('Office')">OFFICE</div>
+            <img src="assets/img/other/assets_8. CASAA web project_2020-09-27/Ellipse 61.svg" [style.visibility]="getVisibility('Office')">
+        </div>
+        <div>
+            <div [style.font-weight]= "getFontWeight('Institutional')" [style.color]="getColor('Institutional')" (click)="setCategory('Institutional')">INSTITUTIONAL</div>
+            <img src="assets/img/other/assets_8. CASAA web project_2020-09-27/Ellipse 61.svg" [style.visibility]="getVisibility('Institutional')">
+        </div>
+        <div>
+            <div [style.font-weight]= "getFontWeight('Interior')" [style.color]="getColor('Interior')" (click)="setCategory('Interior')">INTERIOR</div>
+            <img src="assets/img/other/assets_8. CASAA web project_2020-09-27/Ellipse 61.svg" [style.visibility]="getVisibility('Interior')">
+        </div>
+        <div>
+            <div [style.font-weight]= "getFontWeight('Master Planning')" [style.color]="getColor('Master Planning')" (click)="setCategory('Master Planning')">MASTER PLANNING</div>
+            <img src="assets/img/other/assets_8. CASAA web project_2020-09-27/Ellipse 61.svg" [style.visibility]="getVisibility('Master Planning')">
+        </div>
     </div>
     <div class="line"></div>
-    <div class="Ellipse-61">
-        <img src="assets/img/other/assets_8. CASAA web project_2020-09-27/Ellipse 61.svg" [style.visibility]="getVisibility('All')">
-        <img src="assets/img/other/assets_8. CASAA web project_2020-09-27/Ellipse 61.svg" [style.visibility]="getVisibility('Residential')">
-        <img src="assets/img/other/assets_8. CASAA web project_2020-09-27/Ellipse 61.svg" [style.visibility]="getVisibility('Commercial')">
-        <img src="assets/img/other/assets_8. CASAA web project_2020-09-27/Ellipse 61.svg" [style.visibility]="getVisibility('Hospitality')">
-        <img src="assets/img/other/assets_8. CASAA web project_2020-09-27/Ellipse 61.svg" [style.visibility]="getVisibility('Office')">
-        <img src="assets/img/other/assets_8. CASAA web project_2020-09-27/Ellipse 61.svg" [style.visibility]="getVisibility('Institutional')">
-        <img src="assets/img/other/assets_8. CASAA web project_2020-09-27/Ellipse 61.svg" [style.visibility]="getVisibility('Interior')">
-        <img src="assets/img/other/assets_8. CASAA web project_2020-09-27/Ellipse 61.svg" [style.visibility]="getVisibility('Master Planning')">
-    </div>
     
 </div>
 
 <div *ngIf="!project_selected">
-    <div class="topic">{{category}}</div>
+    <div class="topic-main">{{category}}</div>
     <div class="projects_flex_box" >
-        <div *ngFor="let project of all_projects" class="oneProject">
-            <img src="assets/img/projects/{{project.id}}/1 .jpg" height="259px" width="454px" (click)="selectProject(project)" [style.display]="getProjectVisibility(project.type)">
-            <div class="project" [style.display]="getProjectVisibility(project.type)">{{project.name}}</div>
-            <div class="location" [style.display]="getProjectVisibility(project.type)">{{project.location}}</div>
+        <div *ngFor="let project of all_projects">
+            <div [style.display]="getProjectVisibility(project.type)">
+                <img src="assets/img/projects/{{project.id}}/1 .jpg"  (click)="selectProject(project)">
+                <div class="project">{{project.name}}</div>
+                <div class="location">{{project.location}}</div>
+            </div> 
         </div> 
     </div>
     <app-bottom-bar></app-bottom-bar>
