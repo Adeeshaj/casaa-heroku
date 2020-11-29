@@ -1,6 +1,6 @@
 .Rectangle-321 {
     width: 100%;
-    height: 400px;
+    height: 52.08vh;
     background-color: #e7e8f2;
     top: 24vh;
     position: absolute;
@@ -18,8 +18,8 @@
     letter-spacing: normal;
     text-align: left;
     color: #12131c;
-    top: 59px;
-    left: 128px;
+    top: 7.68vh;
+    left: 9.37vw;
     position: relative;
 }
 
@@ -43,58 +43,58 @@
 }
 
 .For-Clients {
-    top: 125px;
-    left: 128px;
+    top: 16.27vh;
+    left:  9.37vw;
     position: absolute;
 }
 
 .For-Clients-content {
-    top: 147px;
-    left: 128px;
+    top: 19.14vh;
+    left: 9.37vw;
     position: absolute;
 }
 
 .office {
-    top: 125px;
-    left: 360px;
+    top: 16.27vh;
+    left: 26.35vw;
     position: absolute;
 }
 
 .office-content {
-    top: 147px;
-    left: 360px;
+    top: 19.14vh;
+    left: 26.35vw;
     position: absolute;
 }
 
 .address {
-    top: 223px;
-    left: 128px;
+    top: 27.99vh;
+    left: 9.37vw;
     position: absolute;
 }
 
 .address-content {
-    top: 244px;
-    left: 128px;
+    top: 30.72vh;
+    left: 9.37vw;
     width: 281px;
     height: 51px;
     position: absolute;
 }
 
 .email {
-    top: 335px;
-    left: 128px;
+    top: 43.61vh;
+    left: 9.37vw;
     position: absolute;
 }
 
 .email-content {
-    top: 356px;
-    left: 128px;
+    top: 46.35vh;
+    left: 9.37vw;
     position: absolute;
 }
 
 .slider {
-    width: 724px;
-    height: 400px;
+    width: 53.00vw;
+    height: 52.08vh;
     object-fit: cover;
     right: 0;
     top: 0;

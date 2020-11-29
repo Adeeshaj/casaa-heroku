@@ -1,15 +1,14 @@
 .Rectangle {
-    top: 184px;
+    top: 23.95vh;
     left: 0px;
     position: absolute;
     width: 100%;
-    height: 400px;
+    height: 52.08vh;
 }
 
 .Rectangle-321 {
     width: 80%;
-    height: 400px;
-    margin: 50px 0 27px 0px;
+    height: 52.08vh;
     background-color: #e7e8f2;
     position: absolute;
     left: 20%;
@@ -29,9 +28,9 @@
 }
 
 .topic {
-    top: 58px;
+    top: 0px;
     left: 28px;
-    margin: 33px 121px 13px 0;
+    margin: 0px 121px 22px 0;
     position: relative;
 }
 
@@ -55,7 +54,7 @@
 .news-head-side-bar{
     width: 142px;
     height: 34px;
-    margin: 22px 19px 8px 0;
+    margin: 8px 19px 8px 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     font-weight: normal;
@@ -75,20 +74,19 @@
 }
 
 .news-image {
-    width: 400px;
-    height: 400px;
+    width: 29.28vw;
+    height: 29.28vw;
     margin: 0 51px 0 94px;
     object-fit: contain;
-    left: 550px;
+    left: 40.26vw;
     z-index: 2;
-    position: relative;
-    top: -400px;
+    position: absolute;
+    top: 0vh;
 }
 
 .news-content-type {
     width: 67px;
     height: 17px;
-    margin: 28px 481px 5px 45.5px;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     font-weight: bold;
@@ -98,13 +96,14 @@
     letter-spacing: 1.2px;
     text-align: left;
     color: #12131c;
-    top: 28px;
+    top: 3.64vh;
+    left: 3.36vw;
+    position: absolute;
 }
 
 .news-content-topic {
     width: 275px;
     height: 55px;
-    margin: 9px 273px 12px 45.5px;
     font-family: 'Open Sans', sans-serif;
     font-size: 22px;
     font-weight: bold;
@@ -114,13 +113,14 @@
     letter-spacing: normal;
     text-align: left;
     color: #12131c;
-    top: 54px;
+    top: 7.03vh;
+    left: 3.36vw;
+    position: absolute;
 }
 
 .news-content-date {
     width: 123px;
     height: 17px;
-    margin: 12px 425px 36px 45.5px;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     font-weight: normal;
@@ -130,13 +130,14 @@
     letter-spacing: 1.2px;
     text-align: left;
     color: #5d5d5d;
-    top: 121px;
+    top: 15.75vh;
+    left: 3.36vw;
+    position: absolute;
 }
 
 .news-content-para {
-    max-width: 454px;
-    max-height: 120px;
-    margin: 36px 94px 26px 45.5px;
+    max-width: 33.23vw;
+    max-height: 15.62vh;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     font-weight: normal;
@@ -146,15 +147,17 @@
     letter-spacing: normal;
     text-align: left;
     color: #5d5d5d;
-    top: 160px;
+    top: 20.83vh;
+    left: 3.36vw;
     overflow: hidden;
+    position: absolute;
 }
 
 .fade-background {
-    width: 500px;
-    height: 74px;
-    top: 220px;
-    left: 28px;
+    width: 36.60vw;
+    height: 9.63vh;
+    top: 28.64vh;
+    left: 3.36vw;
     z-index: 10;
     position: absolute;
     background-image: linear-gradient(to bottom, rgba(231, 232, 242, 0), #e7e8f2);
@@ -163,11 +166,12 @@
 .Rectangle-326 {
     width: 171px;
     height: 44px;
-    margin: 26px 377px 36px 45.5px;
     -webkit-backdrop-filter: blur(30px);
     backdrop-filter: blur(30px);
     background-color: #12131c;
-    top: 320px;
+    top: 41.66vh;
+    left: 3.36vw;
+    position: absolute;
 }
 
 .Group-331 {
@@ -210,13 +214,13 @@
 
 .Rectangle-322 {
     width: 80%;
-    height: 584px;
+    height: 76.04vh;
     background-color: #e7e8f2;
     overflow-y: auto;
     overflow-x: hidden;
     position: absolute;
     left: 20%;
-    top:-20px;
+    top: -11.58vh;
 }
   
 .news-content-para-full {
@@ -232,19 +236,28 @@
     color: #5d5d5d;
     display: inline-block;
     z-index: 1;
+    top: 20.31vh;
     position: relative;
 }
 
-.news-content-para-full > p {
+.news-content-para-full > .first_para {
+    width: 464px;
+    height: 183px;
     position: relative;
 }
+
+.news-content-para-full > .other_para {
+    position: relative;
+}
+
 
 .news-image-full {
-    width: 400px;
-    height: 400px;
-    margin: 13px 97px 28px 62px;
+    top: 76px;
+    width: 422px;
+    height: 295px;
+    margin: 0px 97px 28px 0px;
     left: 550px;
     float: right;
-    top: -600px;
     z-index: 1;
+    position: absolute;
 }

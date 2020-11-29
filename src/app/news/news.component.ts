@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { getJSDocThisTag } from 'typescript';
 
 import * as News from '../../assets/news.json';
 
@@ -19,7 +20,11 @@ export class NewsComponent implements OnInit {
   display_exhibition: string;
   selected_news: any;
   news_selected: boolean;
-
+  recent_news: Array<object>;
+  achievements_news: Array<object>;
+  published_news: Array<object>;
+  exhibition_news: Array<object>;
+  
   constructor() { }
 
   ngOnInit(): void {
@@ -30,10 +35,12 @@ export class NewsComponent implements OnInit {
     this.exhibition_dropdown_icon = 'Group 333.svg';
     this.display_recent = 'block';
     this.display_achievements = 'none';
+    this.display_published = 'none';
     this.display_exhibition = 'none';
-    this.display_achievements = 'none';
     this.selected_news = this.all_news[0];
     this.news_selected = false;
+    this.__get_news()
+ 
   }
 
   dropDown(type){
@@ -95,5 +102,30 @@ export class NewsComponent implements OnInit {
 
   readMore(){
     this.news_selected = true
+  }
+
+  getFontWeight(component){
+    if (component == this.selected_news.id) {
+      return 'bold';
+    } else{
+      return 'normal';
+    }
+  }
+
+  __get_news(){
+    this.exhibition_news = []
+    this.achievements_news = []
+    this.published_news = []
+    this.recent_news = []
+    this.all_news.forEach( (news) => {
+      if(news['type'] == "Exhibition"){
+        this.exhibition_news.push(news)
+      } else if(news['type'] == "Achievements"){
+        this.achievements_news.push(news)
+      } else if(news['type'] == "Published"){
+        this.published_news.push(news)
+      }
+    });
+    this.recent_news = this.all_news.slice(0,4)
   }
 }

@@ -111,4 +111,9 @@ export class AboutComponent implements OnInit {
   prev() {
     this.slickModal.slickPrev();
   }
+
+  scroll(id){
+    const elmnt = document.getElementById(id);
+    elmnt.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+}
 }

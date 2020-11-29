@@ -3,29 +3,29 @@
         <div class="topic">
             <img src="assets/img/other/assets_11.CASAA Web News_2020-11-15/{{recent_dropdown_icon}}" class="dropdown" (click)="dropDown('recent')">
             <div class="Recent-News">Recent News</div>
-            <div *ngFor="let news of all_news" >
-                <div class="news-head-side-bar" [style.display]="getDisplay('recent')">{{news.topic}}</div>
+            <div *ngFor="let news of recent_news" >
+                <div class="news-head-side-bar" [style.display]="getDisplay('recent')" [style.font-weight]="getFontWeight(news.id)" (click)="selectNews(news.id)">{{news.topic}}</div>
             </div>
         </div>
         <div class="topic">
             <img src="assets/img/other/assets_11.CASAA Web News_2020-11-15/{{achievements_dropdown_icon}}" class="dropdown" (click)="dropDown('achievements')">
-            <div class="Recent-News">Achivements</div>
-            <div *ngFor="let news of all_news" >
-                <div class="news-head-side-bar" [style.display]="getDisplay('achievements')">{{news.topic}}</div>
+            <div class="Recent-News">Achievements</div>
+            <div *ngFor="let news of achievements_news" >
+                <div class="news-head-side-bar" [style.display]="getDisplay('achievements')" [style.font-weight]="getFontWeight(news.id)" (click)="selectNews(news.id)">{{news.topic}}</div>
             </div>
         </div>
         <div class="topic">
             <img src="assets/img/other/assets_11.CASAA Web News_2020-11-15/{{published_dropdown_icon}}" class="dropdown" (click)="dropDown('published')">
             <div class="Recent-News">Published</div>
-            <div *ngFor="let news of all_news" >
-                <div class="news-head-side-bar" [style.display]="getDisplay('published')">{{news.topic}}</div>
+            <div *ngFor="let news of published_news" >
+                <div class="news-head-side-bar" [style.display]="getDisplay('published')" [style.font-weight]="getFontWeight(news.id)" (click)="selectNews(news.id)">{{news.topic}}</div>
             </div>
         </div>
         <div class="topic">
             <img src="assets/img/other/assets_11.CASAA Web News_2020-11-15/{{exhibition_dropdown_icon}}" class="dropdown" (click)="dropDown('exhibition')">
             <div class="Recent-News">Exhibition</div>
-            <div *ngFor="let news of all_news" >
-                <div class="news-head-side-bar" [style.display]="getDisplay('exhibition')">{{news.topic}}</div>
+            <div *ngFor="let news of exhibition_news" >
+                <div class="news-head-side-bar" [style.display]="getDisplay('exhibition')" [style.font-weight]="getFontWeight(news.id)" (click)="selectNews(news.id)">{{news.topic}}</div>
             </div>
         </div>
     </div>
@@ -36,9 +36,9 @@
             <div class="news-content-date">Date: {{selected_news.date}}</div>
             <div class="news-content-para">{{selected_news.description[0]}}</div>
             <div class="fade-background"></div>
-            <div class="Rectangle-326">
+            <div class="Rectangle-326" (click)="readMore()">
                 <img src="assets/img/other/assets_11.CASAA Web News_2020-11-15/Group 331.svg" class="Group-331">
-                <div class="Read-more" (click)="readMore()">Read more</div>
+                <div class="Read-more">Read more</div>
                 <div class="Path-80"></div>
             </div>
         </div>
@@ -56,8 +56,9 @@
             <div class="news-image-full">
                 <img src="assets/img/news/{{selected_news.img_url}}">
             </div>
-            <div class="news-content-para-full" *ngFor="let para of selected_news.description">
-                <p>{{para}}</p>
+            <div class="news-content-para-full" *ngFor="let para of selected_news.description; let i = index" [attr.data-index]="i">
+                <div *ngIf="i==0" class="first_para">{{para}}</div>
+                <div *ngIf="i!=0" class="other_para">{{para}}</div>
             </div>
             
         </div>

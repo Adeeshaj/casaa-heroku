@@ -26,11 +26,12 @@
     text-align: center;
     color: #ffffff;
     display: flex;
-    top: 133px;
+    top: 17.7vh;
     position: relative;
     flex-wrap: nowrap;
     margin-left: auto;
     margin-right: auto;
+    z-index: 10;
 }
 
 .categories > div {
@@ -40,31 +41,20 @@
 .line{
     width: 85%;
     height: 1px;
-    top: 170.5px;
+    top: 19.25vh;
     border-bottom: 1px solid #ffffff;
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    z-index: 0;
+    z-index: 10;
 }
 
-.Ellipse-61 {    
+.categories > div > img {    
     height: 7px;
     object-fit: contain;
     background: transparent;
-    width: 85%;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    top: 167px;
+    top:  0.52vh;
     position: relative;
-    flex-wrap: nowrap;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.Ellipse-61 > img {
-    z-index: 1;
     margin-left: auto;
     margin-right: auto;
 }
@@ -99,8 +89,8 @@
     text-align: left;
     color: #5d5d5d;
     position: relative;
-    left: 130px;
-    top: 313px;
+    left: 9.37vw;
+    top: 18.61vh;
 }
 
 .section > .topic {
@@ -115,8 +105,8 @@
     letter-spacing: normal;
     text-align: left;
     color: #12131c;
-    left: 130px;
-    top: 338px;
+    left: 9.37vw;
+    top: 21.87vh;
     position: relative;
     margin: 0;
 }
@@ -134,8 +124,8 @@
     text-align: left;
     color: #5d5d5d;
     position: relative;
-    top: 474px;
-    left: 130px;
+    top: 39.58vh;
+    left: 9.37vw;
 }
 
 .highlight {
@@ -144,8 +134,8 @@
 }
 
 .section > .sketches {
-    top: 343px;
-    right: 77px;
+    top: 9.37vh;
+    right: 5.63vw;
     position: absolute;
     z-index: -1;
 }
@@ -171,8 +161,8 @@
     text-align: right;
     color: #5d5d5d;
     position: absolute;
-    right: 130px;
-    top: 313px;
+    right: 9.37vw;
+    top: 18.61vh;
 }
 
 .section > .topic-invert  {
@@ -187,8 +177,8 @@
     letter-spacing: normal;
     text-align: right;
     color: hsl(234, 22%, 9%);
-    right: 130px;
-    top: 338px;
+    right: 9.37vw;
+    top: 21.87vh;
     position: absolute;
     margin: 0;
 }
@@ -206,14 +196,14 @@
     text-align: right;
     color: #5d5d5d;
     position: absolute;
-    top: 474px;
-    right: 130px;
+    top: 39.58vh;
+    right: 9.37vw;
     text-decoration: none;
 }
 
 .section > .sketches-invert  {
-    top: 243px;
-    left: 128px;
+    top: 9.37vh;
+    left: 9.37vw;
     position: absolute;
     z-index: -1;
 }
@@ -234,12 +224,11 @@
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.91;
     letter-spacing: normal;
     text-align: left;
-    color: #ffffff;
-    top: 41px;
-    left: 111px;
+    color: #12131c;
+    top: 5.33vh;
+    left: 8.12vw;
     position: relative;
     z-index: 1;
   }
@@ -250,7 +239,7 @@
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     z-index: 2;
-    top: 215px;
+    top: 27.99vh;
     position: relative;
 }
 
@@ -266,8 +255,8 @@
     letter-spacing: normal;
     text-align: left;
     color: #ffffff;
-    top: 80px;
-    left: 128px;
+    top: 10.41vh;
+    left: 9.37vw;
     position: relative;
 }
 
@@ -283,8 +272,8 @@
     letter-spacing: normal;
     text-align: left;
     color: #ffffff;
-    top: 162px;
-    left: 128px;
+    top: 21.09vh;
+    left: 9.37vw;
     position: relative;
 }
 
@@ -300,13 +289,13 @@
     letter-spacing: 1.6px;
     text-align: left;
     color: #ffffff;
-    top: 259px;
-    left: 128px;
+    top: 33.72vh;
+    left: 9.37vw;
     position: relative;
 }
 
 .team-nav {
-    top: 90px;
+    top: 11.71vh;
     height: 250px;
     position: relative;
 }
@@ -341,18 +330,18 @@
     width: 97px;
     height: 97px;
     backdrop-filter: blur(15px);
-    background-color: #141521;
+    background-color: #7e7d7d;
 }
   
 .left {
     position: absolute;
-    top: 10px;
+    top: 5.2vh;
     left: 0px;
 }
 
 .right {
     position: absolute;
-    top: 10px;
+    top: 5.2vh;
     right: 0px;
 }
 
@@ -391,8 +380,8 @@
 }
 
 .member-img {
-    top: 415px;
-    left: 198px;
+    top: 42.7vh;
+    left: 14.49vw;
     width: 160px;
     height: 240px;
     object-fit: contain;
@@ -401,10 +390,10 @@
   
 .member-position {
     top: 0px;
-    left: 666px;
-    width: 153px;
+    left: 48.75vw;
+    width: 35.72vw;
     height: 17px;
-    margin: 91px 64px 0 16px;
+    margin: 91px 64px 0 0px;
     font-size: 12px;
     font-weight: bold;
     font-stretch: normal;
@@ -418,15 +407,14 @@
 
 .member-name {
     top: 0px;
-    left: 666px;
-    width: 280px;
+    left: 48.75vw;
+    width: 35.72vw;
     height: 30px;
-    margin: 6px 150px 20px 16px;
+    margin: 6px 150px 6px 0px;
     font-size: 22px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.91;
     letter-spacing: normal;
     text-align: left;
     color: #12131c;
@@ -435,10 +423,9 @@
 
 .member-description {
     top: 0px;
-    left: 666px;
-    width: 488px;
+    left: 48.75vw;
+    width: 35.72vw;
     height: 95px;
-    margin: 64px 5px 65px 16px;
     font-size: 12px;
     font-weight: normal;
     font-stretch: normal;

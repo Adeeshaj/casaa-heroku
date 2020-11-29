@@ -1,18 +1,24 @@
 <div class="about">
     <div class="top-nav">
         <div class="categories">
-            <div [style.font-weight]= "getFontWeight('CASSA')" [style.color]="getColor('CASSA')" (click)="setCategory('CASSA')">CASSA</div>
-            <div [style.font-weight]= "getFontWeight('service')" [style.color]="getColor('service')" (click)="setCategory('service')">SERVICE</div>
-            <div [style.font-weight]= "getFontWeight('philosophy')" [style.color]="getColor('philosophy')" (click)="setCategory('philosophy')">PHILOSOPHY</div>
-            <div [style.font-weight]= "getFontWeight('team')" [style.color]="getColor('team')" (click)="setCategory('team')">OUR TEAM</div>
+            <div (click)="scroll('CASSA')">
+                <div [style.font-weight]= "getFontWeight('CASSA')" [style.color]="getColor('CASSA')" (click)="setCategory('CASSA')">CASSA</div>
+                <img src="assets/img/other/assets_10. CASAA web About us_2020-10-07/Ellipse 61_2.svg" [style.visibility]="getVisibility('CASSA')">
+            </div>
+            <div (click)="scroll('service')">
+                <div [style.font-weight]= "getFontWeight('service')" [style.color]="getColor('service')" (click)="setCategory('service')">SERVICE</div>
+                <img src="assets/img/other/assets_10. CASAA web About us_2020-10-07/Ellipse 61_2.svg" [style.visibility]="getVisibility('service')">
+            </div>
+            <div (click)="scroll('philosophy')">
+                <div [style.font-weight]= "getFontWeight('philosophy')" [style.color]="getColor('philosophy')" (click)="setCategory('philosophy')">PHILOSOPHY</div>
+                <img src="assets/img/other/assets_10. CASAA web About us_2020-10-07/Ellipse 61_2.svg" [style.visibility]="getVisibility('philosophy')">
+            </div>
+            <div (click)="scroll('team')">
+                <div [style.font-weight]= "getFontWeight('team')" [style.color]="getColor('team')" (click)="setCategory('team')">OUR TEAM</div>
+                <img src="assets/img/other/assets_10. CASAA web About us_2020-10-07/Ellipse 61_2.svg" [style.visibility]="getVisibility('team')">
+            </div>
         </div>
         <div class="line"></div>
-        <div class="Ellipse-61">
-            <img src="assets/img/other/assets_10. CASAA web About us_2020-10-07/Ellipse 61_2.svg" [style.visibility]="getVisibility('CASSA')">
-            <img src="assets/img/other/assets_10. CASAA web About us_2020-10-07/Ellipse 61_2.svg" [style.visibility]="getVisibility('service')">
-            <img src="assets/img/other/assets_10. CASAA web About us_2020-10-07/Ellipse 61_2.svg" [style.visibility]="getVisibility('philosophy')">
-            <img src="assets/img/other/assets_10. CASAA web About us_2020-10-07/Ellipse 61_2.svg" [style.visibility]="getVisibility('team')">
-        </div>
     </div>
     <div class="section">
         <img src="assets/img/about/interior-design-consultant_2020-10-07-2/interior-design-consultant.jpg">
@@ -23,7 +29,7 @@
         </div>
     </div>
     
-    <div class="section">
+    <div class="section" id="CASSA">
         <div class="sub-section">CASSA</div>
         <div class="topic">Contemporary Architecture Studio and Associates </div>
         <div class="description">
@@ -42,7 +48,7 @@
         </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="service">
         <div class="sub-section-invert">CASSA</div>
         <div class="topic-invert">Service </div>
         <div class="description-invert">
@@ -61,7 +67,7 @@
         </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="philosophy">
         <div class="sub-section">CASSA</div>
         <div class="topic">Philosophy</div>
         <div class="description">
@@ -76,19 +82,10 @@
 
     <div class="section">
         <div class="Our-Team">Our Team</div>
-        <img src="assets/img/about/Mask Group 2_2020-10-08/Mask Group 2.jpg">
+        <img src="assets/img/about/Group pic.jpg">
     </div>
 
-    <div class="section">
-        <!--  -->
-        <!-- <div class="team-nav" *ngFor="let person of people">
-            <div class="members">
-                <div [style.font-weight]= "getFontWeightMember('person.id')" [style.color]="getColorMember('person.id')" (click)="setMember('person.id')">{{person.name}}</div>
-            </div>
-            <div class="Ellipse-61">
-                <img src="assets/img/other/assets_10. CASAA web About us_2020-10-07/Ellipse 61.svg" [style.visibility]="getVisibilityMember('person.id')">
-            </div>
-        </div> -->
+    <div class="section" id="team">
         <div class="team-nav">
             <div class="lineMember"></div>
             <ngx-slick-carousel class="carousel" 
