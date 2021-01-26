@@ -1,11 +1,27 @@
 <div class="Rectangle-302">
     <div class="slide">
-        <div class="card_part card_part-one"></div>
+        <!-- <div class="card_part card_part-one"></div>
         <div class="card_part card_part-two"></div>
         <div class="card_part card_part-three"></div>
-        <div class="card_part card_part-four"></div>
+        <div class="card_part card_part-four"></div> -->
+
+        <ngx-slick-carousel class="carousel" 
+            #slickModal="slick-carousel" 
+            [config]="slideConfig" 
+            (init)="slickInit($event)"
+            (breakpoint)="breakpoint($event)"
+            (afterChange)="afterChange($event)"
+            (beforeChange)="beforeChange($event)">
+            <div ngxSlickItem *ngFor="let slide of slides">
+                <!-- <video id="glass" width="100%" height="100%" autoplay muted preload="auto" loop>
+                    <source src="{{ slide.img}}" type="video/gif">
+                </video> -->
+                <img src="{{slide.img}}" class="slider-img">
+            </div>
+        </ngx-slick-carousel> 
+
     </div>
-    <div class="banner-text-sub">
+    <div class="banner-text-sub"> 
         <div class="We-create"> We create </div>
         <div class="Contemporary-Design"> Contemporary Design </div>
     </div>
@@ -18,8 +34,8 @@
     </div>
     <div class="mobile">+94 (0) 77 392 7257  / +94 (0) 11 280 7129</div>
     <div class="Rectangle-380">
-        <img src="assets/img/other/assets_5. CASAA web Home page_2020-09-19/Group 328.svg" class="Group-328" (click)="left()">
-        <img src="assets/img/other/assets_5. CASAA web Home page_2020-09-19/Group 327.svg" class="Group-327" (click)="right()">
+        <img src="assets/img/other/assets_5. CASAA web Home page_2020-09-19/Group 328.svg" class="Group-328" (click)="prev()">
+        <img src="assets/img/other/assets_5. CASAA web Home page_2020-09-19/Group 327.svg" class="Group-327" (click)="next()">
         <div class="topic">South Bolgoda Retreat</div>
         <div class="Project">project</div>
     </div>

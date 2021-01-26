@@ -7,11 +7,11 @@
 
 .slide {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 110%;
+    height: 110%;
     overflow: hidden;
 } 
-.slide:after {
+/* .slide:after {
     content: '';
     position: absolute;
     left: 0;
@@ -19,7 +19,22 @@
     z-index: 9;
     display: block;
     background-color: rgba(140, 22, 115, 0.2);
-} 
+}  */
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slider-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    animation: slideTransition 54s cubic-bezier(0, 0, 0, 0.97) infinite;
+}
 
 .banner-text-sub {
     height: 90px;
@@ -217,15 +232,12 @@
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
     z-index: 7;
-    display: flex;
     align-items: center;
     width: 100%;
     height: 100%;
-    transform: translateX( 100vw );
-    background-size: cover;
-    background-position: center;
-    background-image: url( "/assets/img/Landing Page/1 .jpg");
     animation: slideTransition 40s cubic-bezier(0, 0, 0, 0.97) infinite;
   }
 
@@ -283,8 +295,15 @@
 } */
 
 @keyframes slideTransition {
-    3% { transform: translateX( 0 ) scale(1) ; }
-    25% { transform: translateX( 0 ) scale(1.05); }
-    28% {  transform: translateX( -100vw ) scale(1); }
-    100% { transform: translateX( -100vw ) scale(1); }
+    1% { transform: scale(1);}
+    16.66% { transform: scale(1.05) ; }
+    17.66% { transform: scale(1) ; }
+    33.33% { transform: scale(1); }
+    50% {  transform: scale(1.05); }
+    51% {  transform: scale(1); }
+    66.66% { transform: scale(1.05); }
+    67.66% { transform: scale(1); }
+    83.33% { transform: scale(1.05); }
+    83.33% { transform: scale(1); }
+    100% { transform: scale(1); }
   }

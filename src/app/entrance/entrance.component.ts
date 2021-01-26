@@ -1,5 +1,6 @@
 import { Time } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { SlickCarouselComponent } from 'ngx-slick-carousel';
 
 @Component({
   selector: 'app-entrance',
@@ -10,7 +11,26 @@ export class EntranceComponent implements OnInit {
   CURRENT_SLIDE: number;
   TIMEOUT: number;
   StartTime: number;
+  @ViewChild('slickModal') slickModal: SlickCarouselComponent;
 
+  slides = [
+    {img: '/assets/img/Landing Page/1 .jpg'},
+    {img: "/assets/img/Landing Page/2 .gif"},
+    {img: "/assets/img/Landing Page/3 .jpg"},
+    {img: "/assets/img/Landing Page/4 .jpg"},
+    {img: '/assets/img/Landing Page/5 .jpg'},
+    {img: "/assets/img/Landing Page/6 .gif"},
+  ];
+  slideConfig = {
+    "slidesToShow": 1, 
+    "slidesToScroll": 1,
+    "infinite": true,
+    "autoplay": true,
+    "autoplaySpeed": 9000,
+    "useCSS": true,
+    "useTransform": true,
+    "loop": true
+  };
   constructor() { }
 
   ngOnInit(): void {
@@ -102,5 +122,29 @@ export class EntranceComponent implements OnInit {
     } else {
       return false;
     }
+  }
+
+  slickInit(e) {
+    console.log('slick initialized');
+  }
+  
+  breakpoint(e) {
+    console.log('breakpoint');
+  }
+  
+  afterChange(e) {
+    console.log('afterChange');
+  }
+  
+  beforeChange(e) {
+    console.log('beforeChange');
+  }
+
+  next() {
+    this.slickModal.slickNext();
+  }
+  
+  prev() {
+    this.slickModal.slickPrev();
   }
 }
