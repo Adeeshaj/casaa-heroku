@@ -14,11 +14,11 @@ export class EntranceComponent implements OnInit {
   @ViewChild('slickModal') slickModal: SlickCarouselComponent;
 
   slides = [
-    // {img: '/assets/img/Landing Page/1 .jpg'},
+    {img: '/assets/img/Landing Page/1 .mp4'},
     {img: "/assets/img/Landing Page/2 .mp4"},
-    // {img: "/assets/img/Landing Page/3 .jpg"},
-    // {img: "/assets/img/Landing Page/4 .jpg"},
-    // {img: '/assets/img/Landing Page/5 .jpg'},
+    {img: "/assets/img/Landing Page/3 .mp4"},
+    {img: "/assets/img/Landing Page/4 .mp4"},
+    {img: '/assets/img/Landing Page/5 .mp4'},
     {img: "/assets/img/Landing Page/6 .mp4"},
   ];
   slideConfig = {
