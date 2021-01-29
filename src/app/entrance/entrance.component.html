@@ -13,10 +13,10 @@
             (afterChange)="afterChange($event)"
             (beforeChange)="beforeChange($event)">
             <div ngxSlickItem *ngFor="let slide of slides">
-                <!-- <video id="glass" width="100%" height="100%" autoplay muted preload="auto" loop>
-                    <source src="{{ slide.img}}" type="video/gif">
-                </video> -->
-                <img src="{{slide.img}}" class="slider-img">
+                <video class="video-background" autoplay muted playsinline loop>
+                    <source src="{{ slide.img}}" type="video/mp4">
+                </video>
+                <!-- <img src="{{slide.img}}" class="slider-img"> -->
             </div>
         </ngx-slick-carousel> 
 

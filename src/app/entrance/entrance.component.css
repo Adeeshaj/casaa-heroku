@@ -7,9 +7,15 @@
 
 .slide {
     position: relative;
-    width: 110%;
-    height: 110%;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
+}
+
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
 } 
 /* .slide:after {
     content: '';
@@ -33,7 +39,6 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    animation: slideTransition 54s cubic-bezier(0, 0, 0, 0.97) infinite;
 }
 
 .banner-text-sub {

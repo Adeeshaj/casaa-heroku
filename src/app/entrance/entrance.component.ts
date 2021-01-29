@@ -14,22 +14,19 @@ export class EntranceComponent implements OnInit {
   @ViewChild('slickModal') slickModal: SlickCarouselComponent;
 
   slides = [
-    {img: '/assets/img/Landing Page/1 .jpg'},
-    {img: "/assets/img/Landing Page/2 .gif"},
-    {img: "/assets/img/Landing Page/3 .jpg"},
-    {img: "/assets/img/Landing Page/4 .jpg"},
-    {img: '/assets/img/Landing Page/5 .jpg'},
-    {img: "/assets/img/Landing Page/6 .gif"},
+    // {img: '/assets/img/Landing Page/1 .jpg'},
+    {img: "/assets/img/Landing Page/2 .mp4"},
+    // {img: "/assets/img/Landing Page/3 .jpg"},
+    // {img: "/assets/img/Landing Page/4 .jpg"},
+    // {img: '/assets/img/Landing Page/5 .jpg'},
+    {img: "/assets/img/Landing Page/6 .mp4"},
   ];
   slideConfig = {
     "slidesToShow": 1, 
     "slidesToScroll": 1,
     "infinite": true,
     "autoplay": true,
-    "autoplaySpeed": 9000,
-    "useCSS": true,
-    "useTransform": true,
-    "loop": true
+    "autoplaySpeed": 9000
   };
   constructor() { }
 
