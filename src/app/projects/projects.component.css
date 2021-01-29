@@ -69,13 +69,13 @@
 }   
 
 .projects_flex_box > div > div{
-    margin-left: 1px;
-    margin-bottom: 1px;
+    margin-left: 0.0007vw;
+    margin-bottom: 0.0013vh;
     height: 18.96vw;
 }
 
 .projects_flex_box > div > div >img {
-    width: 33.23vw;
+    width: 33vw;
     height: 18.96vw;
 }
 
