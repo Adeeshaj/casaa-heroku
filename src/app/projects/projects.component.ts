@@ -137,7 +137,7 @@ export class ProjectsComponent implements OnInit {
   getNextProject(){
     let length_all_projects = this.all_projects.length
     let index = this.all_projects.indexOf(this.selected_project)
-    if (length_all_projects <= index){
+    if (length_all_projects-1 <= index){
       var next_project = this.all_projects[0]
     } else {
       var next_project = this.all_projects[index+1]

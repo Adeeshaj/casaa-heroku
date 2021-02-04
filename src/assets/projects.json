@@ -224,6 +224,114 @@
                 "status": "completed",
                 "images": ["1 .jpg", "2 .jpg","3 .jpg","4 .jpg","5 .jpg","6 .jpg","7 .jpg"],
                 "description": ["A weekend retreat for a family designed on the shores of the south Bolgoda Lake.","The design consists of two pavilions, one open planned servicing an open living space. The second pavilion interconnects with an open passageway consists of a pantry/ living and two bedrooms with attached bathrooms. Conceptually the design was derived through the fundamental elements of the trees that exists in the landscape which has been symbolically represented by verticality in the screens and the pillars of the structures. The horizontality of the landscape is represented in the linear form and the roof. The roof opens out towards the landscape at its perimeter, drawing the visitor in, when approaching the pavilion and visually exposing the visitor to the tranquil landscape from within the building."]
+            },
+            {
+                "id": "19 Institutional - Meditation Centre Japan",
+                "name": "Meditation Center for Ranka-Ji Temple",
+                "location": "Chiba, Katori- Shi, Japan.",
+                "type": "Institutional",
+                "clients": "",
+                "project_size": "18,000 Sq.ft.",
+                "plot_size": "90 Perches",
+                "status": "completed",
+                "images": ["1 .jpg", "2 .jpg","3 .jpg","4 .jpg","5 .jpg","6 .jpg","7 .jpg", "8 .jpg", "9 .jpg", "10 .jpg"],
+                "description": ["A meditation centre and a retreat to teach and practice Theravada tradition Buddhist meditation in Japan.", "The centre will be a place of learning on different Theravada Buddhist meditation methods and will be a centre for renowned meditation teachers to transfer knowledge of Theravada meditation methods and practises through the centre to Japanese society.","The design concept has been derived from the notion of mindfulness or focus of thought, the singular most important component of meditation.", "This notion of concentration on singular objectivity calms the mind and rest the mind thereby strengthening it and developing clarity of thought and concentration which brings peace and joy to the individual which resonates to society.", "The main meditation hall lies at the centre of the geometry. The roof concaves inwards towards the meditation hall representing one mindedness and focus where mindfulness occurs. From internal spaces the roof   juts out towards he landscape and sky radiating the energy that is derived through mediation."]
+            },
+            {
+                "id": "20 Residential - chandrasena",
+                "name": "Residential Unit at Hampdon Lane",
+                "location": "Hampdon Lane, Colombo 06, Sri Lanka",
+                "type": "Residential",
+                "clients": "",
+                "project_size": "4,200 Sq.ft.",
+                "plot_size": "8.0 Perches",
+                "status": "completed",
+                "images": ["1 .jpg", "2 .jpg","3 .jpg","4 .jpg", "1 .jpg", "2 .jpg","3 .jpg","4 .jpg", "1 .jpg", "2 .jpg","3 .jpg","4 .jpg"],
+                "description": ["Located down Hampdon Lane in Wellawatte, the site is 8.0 perches in area. The requirement was a two unit apartment residential condo with a rentable commercial space on the ground floor. Therefor the design entails a ground floor commercial space and a three bedroom residential unit on the 1st and 2nd floors. The rooftop terrace acts as an urban garden that services the two apartment units.", "As the site faces a very busy residential and commercial mixed zone street the design focuses on a façade that retains privacy for the inhabitants as well as brings in natural light and ventilation. In order to achieve this, a green screen has been developed on the façade where planters grow foliage that block out the western sun as well as filters the dust and noise from the street below. The façade also acts as a system of filtration in terms of privacy where operable panels are top hung on the façade for the inhabitants to open and close as necessary to create views and vistas to the street below and beyond."]
+            },
+            {
+                "id": "21 Residential - Dulantha",
+                "name": "House at Wimala Vihare Road",
+                "location": "Nawala, Sri Lanka",
+                "type": "Residential",
+                "clients": "",
+                "project_size": "3,300 Sq.ft.",
+                "plot_size": "8.0 Perches",
+                "status": "completed",
+                "images": ["1 .jpg", "2 .jpg","3 .jpg","4 .jpg","5 .jpg","6 .jpg", "1 .jpg", "2 .jpg","3 .jpg","4 .jpg","5 .jpg","6 .jpg"],
+                "description": ["Located down Wimala Vihare Road in Nawala, the site is 8.0 perches in area. The requirement was a three bedroom house for a family of three where the parents are doctors. Security was a paramount requirement as a large part of the day the house was not occupied due to the profession of the inhabitants.", "The house is designed with a double height living and dining space that is intersected with a triple height open to sky courtyard. The courtyard acts as a wind funnel, constantly cooling the interior spaces due to the stack effect.", "The roof top space that occupies an office, gym and a utility area opens out to two terraces that brings in light and ventilation. The facade of the front elevation that faces a private street has been treated with vertical timber fenestrations to give privacy to the internal spaces from buildings across the street."]
+            },
+            {
+                "id": "22 Residential - House at Kalinga Place",
+                "name": "House at Kalinga Place",
+                "location": "Jawatte Road, Colombo 05, Sri Lanka",
+                "type": "Residential",
+                "clients": "",
+                "project_size": "16,000 sq.ft",
+                "plot_size": "44 Perches",
+                "status": "completed",
+                "images": ["1 .jpg", "2 .jpg","3 .jpg","4 .jpg","5 .jpg","6 .jpg","7 .jpg", "8 .jpg","9 .jpg"],
+                "description": ["This luxury 16,000 sq.ft house is designed as a tropical climatic filter while remaining minimalist and contemporary.The house is designed with operable screens, double layered façades and courtyards to enhance its interaction and response to the tropical environment.The house includes a rooftop lap pool, pavilion and cinema. These elements are provided while maintaining a minimal and clean spatial character.The inverted pitched roof brings a light weight and unique character to the design that redefines tropical modernism."]
+            },
+            {
+                "id": "23 Residential - House One",
+                "name": "House One",
+                "location": "House One, Woodland Avenue, Colombo, Sri Lanka",
+                "type": "Residential",
+                "clients": "",
+                "project_size": "3,600 Sq.ft.",
+                "plot_size": "6.79 Perches",
+                "status": "completed",
+                "images": ["1 .jpg", "2 .jpg","3 .jpg","4 .jpg","5 .jpg","6 .jpg","7 .jpg","8 .jpg","9 .jpg"],
+                "description": ["Located in Kohuwela, the site is 6.79 perches in area. With limitations of 10 foot setbacks in the front and rear the house has been designed and built on a building footprint of less than 3.5 perches. The house consists of four Bed-rooms with attached Bathrooms, a Pantry and a Kitchen, open plan Living/Dining, a TV room and Rooftop terrace. The design utilizes maximum natural light and ventilation achieved by the use of sliding glass windows, routers and a central stairwell core that acts as a climate moderator taking out warmer air from the lower levels through the roof top level thus continuously cooling the building."]
+            },
+            {
+                "id": "24 Residential - The Trees Apartment",
+                "name": "The Trees Apartments",
+                "location": "Sangaraja Mawatha, Kandy, Sri Lanka",
+                "type": "Residential",
+                "clients": "",
+                "project_size": "13,200 Sq.ft.",
+                "plot_size": "15 Perches",
+                "status": "completed",
+                "images": ["1 .jpg", "2 .jpg","3 .jpg","4 .jpg","5 .jpg","6 .jpg","7 .jpg", "8 .jpg", "1 .jpg", "2 .jpg","3 .jpg","4 .jpg","5 .jpg","6 .jpg","7 .jpg", "8 .jpg"],
+                "description": ["Elegantly designed 12 Bespoke units with views of greenery and the Kandy Lake. Spread out on four levels Each level consists of three private Apartments.", "An apartment consists of three bedrooms with one apartment with attached bathrooms and two apartments with master toilet attached and a common toilet,  open plan Living and dinning serviced by a pantry. Maids or utility room consists of a terrace toilet. Each apartment has a staggered design in its formation to create privacy. Added privacy has been obtained through the introduction of green screens on the edge of the terraces.", "Dedicated parking, standby Generator, 24 Hour security, Passenger lift, overhead water tanks and pump room for uninterrupted water and a roof top terrace garden are some of the utilities provided."]
+            },
+            {
+                "id": "25 Residential -Mahamaya Apartment",
+                "name": "Mahamaya Apartments",
+                "location": "Sangaraja Mawatha, Kandy, Sri Lanka",
+                "type": "Residential",
+                "clients": "",
+                "project_size": "12,000 Sq.ft.",
+                "plot_size": "15 Perches",
+                "status": "completed",
+                "images": ["1 .jpg", "2 .jpg","3 .jpg","4 .jpg","5 .jpg", "1 .jpg", "2 .jpg","3 .jpg","4 .jpg","5 .jpg"],
+                "description": ["Mahamaya Apartments was designed on a 15 perch block facing a canal close to The kandy Lake. The land modulation was kept to a minimal. The project consists of 7 unite of 3 bedroom apartments, each with own dedicated parking and utilities.", "The concept for the design was derived from the fenestrations that are common in ancient Kandyan architecture. The duality of light and privacy has been represented by the use of fenestration in the faced and in the internal spaces. The roof design represents a kandyan roof in an inverted form thus represents the vernacular but within a contemporary approach.", "The exterior walls have been treated with bespoke  cement tiles of which the pattern has been derived from the ancient Dumbara mat weaving patterns unique to the Kandyan crafts heritage."]
+            },
+            {
+                "id": "26 Residential -- Ocean View Condo",
+                "name": "Ocean View Condo",
+                "location": "Handala, Wattala, Sri Lanka",
+                "type": "Residential",
+                "clients": "",
+                "project_size": "30,000 Sq.ft.",
+                "plot_size": "28.7 Perches",
+                "status": "completed",
+                "images": ["1 .jpg", "2 .jpg","3 .jpg","4 .jpg","5 .jpg", "1 .jpg", "2 .jpg","3 .jpg","4 .jpg","5 .jpg"],
+                "description": ["The project is a 28 unit 2 bedroom condominium complex. The Condominiums each have their own parking provision with common accessibility to vertical transportation through two lift and a common stairwell. A rooftop infinity pool and entertainment Terrace as well as a standby generator and a gym are shared amenities of the inhabitants. The site offers views towards the Indian Ocean and is west facing. Therefore dual layer fenestrations have been designed to moderate the harsh afternoon light yet bringing in the natural sea breeze as and when required."]
+            },
+            {
+                "id": "27 Hospitality - Boutique Hotel Kandy",
+                "name": "Boutique Hotel Kandy",
+                "location": "Rajapihille Mawatha, Kandy, Sri Lanka",
+                "type": "Hospitality",
+                "clients": "",
+                "project_size": "31,000 Sq.ft.",
+                "plot_size": "25 Perches",
+                "status": "completed",
+                "images": ["1 .jpg", "2 .jpg","3 .jpg","4 .jpg","5 .jpg", "6 .jpg", "7 .jpg","8 .jpg","9 .jpg","10 .jpg","11 .jpg"],
+                "description": ["This unique property lies in the most important viewpoint of Kandy City, with paneromic views of the Kandy Lake, the Shri Dalada Maligawa and the hinterland of the central hills beyond. Designed on a limited 25 perch property, the boutique hotel which is sevel levels consists of 30 rooms, a lounge, restaurant, infinity pool, yoga space, roof top bar, basement parking, a spa and a business center as well as three unique suites consisting of infinity pools that capture the view of the kandy city below.", "The design while accommodating to the requirements of a boutique hotel was thought through as not to represent the current built environment of the context which is polluting the green environment by not being sensitive. Therefore the design is an anti-response to the current status of the existing built environment and a sensitive repose to the mountainous green environment which it lies on.", "Therefore the exterior skin has been treated with a steel framework that breaks the monotony of the façade to fragments to which planting pods have been introduced to feed in vines and natural flora which in time would engulf the building into greenery. Therefore the building visually would be a sensitive representation of the forested mountainous landscape overtly, but internally would be a bespoke boutique hotel."]
             }
         ]
     }
