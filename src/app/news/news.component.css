@@ -52,6 +52,8 @@
 }
 
 .news-head-side-bar{
+    text-overflow: ellipsis;
+    overflow: hidden;
     width: 142px;
     height: 34px;
     margin: 8px 19px 8px 0;
@@ -102,7 +104,7 @@
 }
 
 .news-content-topic {
-    width: 275px;
+    width: 500px;
     height: 55px;
     font-family: 'Open Sans', sans-serif;
     font-size: 22px;
