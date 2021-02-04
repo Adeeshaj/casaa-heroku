@@ -166,8 +166,8 @@
 .Rectangle-326 {
     width: 171px;
     height: 44px;
-    -webkit-backdrop-filter: blur(30px);
-    backdrop-filter: blur(30px);
+    /* -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px); */
     background-color: #12131c;
     top: 41.66vh;
     left: 3.36vw;
@@ -200,6 +200,21 @@
     left: 20px;
     top: -10px;
     position: relative;
+}
+
+/* Ripple effect */
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+  }
+.ripple:hover {
+    background: #7c7d85 radial-gradient(circle, transparent 1%, #45465a 200%) center/15000%;
+}
+.ripple:active {
+    background-color: #45465a;
+    opacity: 20%;
+    background-size: 100%;
+    transition: background 0s;
 }
 
 .Path-80 {

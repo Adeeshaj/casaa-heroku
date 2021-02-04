@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0%;
     height: 100vh;
+    overflow: hidden;
 }
 
 .slide {
@@ -97,6 +98,25 @@
     height: 94px;
     position: absolute;
     z-index: 10;
+}
+
+.dot-line {
+    top: 19.01vh;
+    right: 4.39vw;
+    width: 15px;
+    position: absolute;
+    z-index: 10;
+}
+
+.Line-3 {
+    width: 0;
+    height: 84.1px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 0.5px #ffffff;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 26px;
+    position: relative;
 }
 
 .address {

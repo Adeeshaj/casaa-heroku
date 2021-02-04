@@ -257,6 +257,7 @@
     margin: 0 1172px 0 0;
     top:0px;
     left: 0px;
+    z-index: 3;
 }
 
 .lower-right {
@@ -264,6 +265,7 @@
     margin: 0 0 0 1172px;
     top:0px;
     right:0px;
+    z-index: 3;
 }
 
 .center {
