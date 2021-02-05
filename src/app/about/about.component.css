@@ -1,5 +1,6 @@
 .about {
     overflow-y: auto;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -79,7 +80,7 @@
 }
 
 .section-philosophy{
-    min-height: 65vh;
+    min-height: 75vh;
 }
 
 .section-team{
@@ -129,7 +130,7 @@
     text-align: left;
     color: #12131c;
     left: 9.37vw;
-    top: 21.87vh;
+    top: 20vh;
     position: relative;
     margin: 0;
 }
@@ -147,7 +148,7 @@
     text-align: left;
     color: #5d5d5d;
     position: relative;
-    top: 39.58vh;
+    top: 32vh;
     left: 9.37vw;
 }
 
@@ -397,6 +398,7 @@
 
 .member-main {
     font-family: 'Open Sans', sans-serif;
+    top: 30vh;
 }
 
 .member-img {

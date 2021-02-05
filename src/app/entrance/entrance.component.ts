@@ -15,12 +15,12 @@ export class EntranceComponent implements OnInit {
   @ViewChild('slickModal') slickModal: SlickCarouselComponent;
 
   slides = [
-    {img: '/assets/img/Landing Page/1 .mp4'},
-    {img: "/assets/img/Landing Page/2 .mp4"},
-    {img: "/assets/img/Landing Page/3 .mp4"},
-    {img: "/assets/img/Landing Page/4 .mp4"},
-    {img: '/assets/img/Landing Page/5 .mp4'},
-    {img: "/assets/img/Landing Page/6 .mp4"},
+    {img: '/assets/img/Landing Page/1 .mp4', proj_name: 'Nestled Hideaway Villa'},
+    {img: "/assets/img/Landing Page/2 .mp4", proj_name: 'Boutique Hotel Kandy'},
+    {img: "/assets/img/Landing Page/3 .mp4", proj_name: 'South Bolgoda Retreat'},
+    {img: "/assets/img/Landing Page/4 .mp4", proj_name: 'House One'},
+    {img: '/assets/img/Landing Page/5 .mp4', proj_name: 'Entrance Gateways to the UNESCO World Heritage City of Anuradhapura'},
+    {img: "/assets/img/Landing Page/6 .mp4", proj_name: 'South Bolgoda Retreat'},
   ];
   slideConfig = {
     "slidesToShow": 1, 

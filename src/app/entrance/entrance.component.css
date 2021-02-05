@@ -183,6 +183,9 @@
 }
 
 .topic {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
     width: 231px;
     height: 30px;
     right: 4.39vw;
