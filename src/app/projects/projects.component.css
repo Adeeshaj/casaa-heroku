@@ -75,7 +75,7 @@
 }
 
 .projects_flex_box > div > div >img {
-    width: 33vw;
+    width: 32.65vw;
     height: 18.96vw;
 }
 
@@ -106,7 +106,10 @@
 }
 
 .projects_flex_box > div > div >.project {
-    width: 31.47vw;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 30.5vw;
     height: 17px;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
