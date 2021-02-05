@@ -83,7 +83,7 @@
 }
 
 .section-team{
-    min-height: 100vh;
+    min-height: 120vh;
 }
 
 .section-team2{
@@ -239,8 +239,6 @@
 }
 
 .Our-Team {
-    width: 108px;
-    height: 30px;
     opacity: 0.72;
     font-family:  'Open Sans', sans-serif;
     font-size: 22px;
@@ -250,7 +248,6 @@
     letter-spacing: normal;
     text-align: left;
     color: #12131c;
-    top: 5.33vh;
     left: 8.12vw;
     position: relative;
     z-index: 1;
