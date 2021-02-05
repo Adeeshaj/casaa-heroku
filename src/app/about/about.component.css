@@ -62,9 +62,32 @@
 .section {
     position: relative;
     width: 100%;
-    min-height: 90.48vh;
     display: block;
     overflow: hidden;
+}
+
+.section-top{
+    min-height: 100vh;
+}
+
+.section-cassa{
+    min-height: 80vh;
+}
+
+.section-service{
+    min-height: 65vh;
+}
+
+.section-philosophy{
+    min-height: 65vh;
+}
+
+.section-team{
+    min-height: 100vh;
+}
+
+.section-team2{
+    min-height: 100vh;
 }
 
 .section > img {
