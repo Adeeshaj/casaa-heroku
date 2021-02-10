@@ -78,9 +78,8 @@
 .news-image {
     width: 29.28vw;
     height: 29.28vw;
-    margin: 0 51px 0 94px;
-    object-fit: contain;
-    left: 40.26vw;
+    object-fit: cover;
+    right: 8.63vw;
     z-index: 2;
     position: absolute;
     top: 0vh;
@@ -241,7 +240,7 @@
 }
   
 .news-content-para-full {
-    margin: 36px 62px 24px 45.5px;
+    margin: 2.63vh 4.53vw 1.75vh 3.33vw;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     font-weight: normal;
@@ -258,12 +257,13 @@
 }
 
 .news-content-para-full > .first_para {
-    width: 464px;
+    width: 33.96vw;
     height: 183px;
     position: relative;
 }
 
 .news-content-para-full > .other_para {
+    width: 100%;
     position: relative;
 }
 
@@ -273,8 +273,83 @@
     width: 422px;
     height: 295px;
     margin: 0px 97px 28px 0px;
-    left: 550px;
+    left: 40.26vw;
     float: right;
     z-index: 1;
     position: absolute;
+}
+
+.news-dot-list {
+    position: absolute;
+    width: 8.63vw;
+    height: 52.08vh;
+    right: 0;
+}
+
+.dot-line {
+    margin-right: auto;
+    margin-left: auto;
+    width: 15px;
+    z-index: 10;
+}
+
+.Line-3 {
+    width: 0;
+    height: 84.1px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 0.5px #12131c;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 26px;
+    position: relative;
+}
+
+.Rectangle-327 {
+    width: 495px;
+    height: 64px;
+    right: 0;
+    top: 79.55vh;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    background-color: #e7e8f2;
+    position: absolute;
+  }
+
+  .topic-bottom {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 231px;
+    height: 30px;
+    right: 4.39vw;
+    top: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.36;
+    letter-spacing: normal;
+    text-align: right;
+    color: #12131c;
+    position: absolute;
+    z-index: 10;
+  }
+
+.news-bottom {
+    width: 39px;
+    height: 17px;
+    right: 4.39vw;
+    top: 9px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.42;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(18, 19, 28, 0.77);
+    position: absolute;
+    z-index: 10;
 }

@@ -128,4 +128,45 @@ export class NewsComponent implements OnInit {
     });
     this.recent_news = this.all_news.slice(0,4)
   }
+
+  getVisibility(component, component_id){
+    if(component=='line'){
+      if (component_id == this.selected_news.id){
+        return 'block';
+      } else {
+        return 'none';
+      }
+    } else if(component=='dot'){
+      if (component_id == this.selected_news.id){
+        return 'none';
+      } else {
+        return 'block';
+      }
+    } else if(component=='dot-selected'){
+      if (component_id == this.selected_news.id){
+        return 'block';
+      } else {
+        return 'none';
+      }
+    }
+  }
+
+  prev(){
+    if(this.selected_news.id == 1){
+      this.selectNews(this.all_news.length)
+    } else {
+      let id = this.selected_news.id-1
+      this.selectNews(id);
+    }
+  }
+
+  next(){
+    if(this.selected_news.id == this.all_news.length){
+      this.selectNews(1)
+    } else {
+      let id = this.selected_news.id+1
+      this.selectNews(id);
+    }
+  }
 }
+

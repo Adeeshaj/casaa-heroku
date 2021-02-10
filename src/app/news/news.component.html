@@ -45,7 +45,13 @@
         <div class="news-image">
             <img src="assets/img/news/{{selected_news.img_url}}" (click)="readMore()" width="100%" height="100%">
         </div>
-        <div class="news-dot-list"></div>
+        <div class="news-dot-list">
+            <div class="dot-line" *ngFor="let news of all_news">
+                <img src="assets/img/other/assets_11.CASAA Web News_2020-11-15/Group 336.svg" position="relative" style="margin:26px 0 0 0" [style.display]="getVisibility('dot-selected', news.id)">
+                <img src="assets/img/other/assets_11.CASAA Web News_2020-11-15/Ellipse 54.svg" position="relative" style="margin:26px 4px 0 4px" [style.display]="getVisibility('dot', news.id)" (click)="selectNews(news.id)">
+                <div class="Line-3" [style.display]="getVisibility('line', news.id)"></div>
+            </div>
+        </div>
     </div>
 
     <div class="Rectangle-322" *ngIf=news_selected>
@@ -65,6 +71,13 @@
         
     </div>
     
+</div>
+
+<div class="Rectangle-327" *ngIf=!news_selected>
+    <img src="assets/img/other/assets_11.CASAA Web News_2020-11-15/Group 337.svg" class="Group-328" (click)="prev()">
+    <img src="assets/img/other/assets_11.CASAA Web News_2020-11-15/Group 339.svg" class="Group-327" (click)="next()">
+    <div class="topic-bottom">{{selected_news.topic}}</div>
+    <div class="news-bottom">Next</div>
 </div>
 
 <app-bottom-bar></app-bottom-bar>
