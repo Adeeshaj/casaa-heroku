@@ -87,7 +87,7 @@
             (afterChange)="afterChange($event)"
             (beforeChange)="beforeChange($event)">
                 <div ngxSlickItem *ngFor="let image of selected_project.images">
-                    <img src="assets/img/projects/{{selected_project.id}}/{{image}}" alt="" height="768px" width="100%">
+                    <img src="assets/img/projects/{{selected_project.id}}/{{image}}" alt="" class="slide-main-img">
                 </div>
         </ngx-slick-carousel>
         <div (click)="next()" class="Rectangle-392 upper-right"><img src="assets/img/other/assets_5. CASAA web Home page_2020-09-19/Group 327.svg" class="center"></div>

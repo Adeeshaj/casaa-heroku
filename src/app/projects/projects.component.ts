@@ -64,7 +64,7 @@ export class ProjectsComponent implements OnInit {
     this.selected_project = project
     this.selected_image = this.selected_project['images'][0]
     this.slideConfigNav = {
-      slidesToShow: 7,
+      slidesToShow: 10,
       slidesToScroll: 1,
       dots: false,
       centerMode: true,
