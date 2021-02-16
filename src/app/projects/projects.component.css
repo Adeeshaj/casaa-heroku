@@ -78,6 +78,15 @@
     width: 32.65vw;
     height: 18.96vw;
     object-fit: cover;
+    filter: gray;
+    -webkit-filter: grayscale(0.6);
+    -webkit-transition: all .8s ease-in-out;
+}
+
+.projects_flex_box > div > div >img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.01);
 }
 
 .footer {
@@ -212,12 +221,13 @@
 
 .slide-main {
     margin-top: 78px;
-    height: 768px;
+    height: 100vh;
+    position: relative;
 }
 
 .slide-main-img {
-    height:768px;
-    width:100%;
+    height:100vh;
+    width:100vw;
     object-fit:cover;
 }
 
@@ -244,14 +254,14 @@
 .upper-left {
     position: absolute;
     margin: 0 436px 284px 0;
-    top: 80vh;
+    top: 45vh;
     left: 0px;
 }
 
 .upper-right {
     position: absolute;
     margin: 0 0 284px 435px;
-    top: 80vh;
+    top: 45vh;
     right: 0px;
 }
 
@@ -459,6 +469,5 @@
     position: absolute;
     width: 194px;
 }
-
 
 

@@ -1,5 +1,5 @@
 import { Time } from '@angular/common';
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
 import { SlickCarouselComponent } from 'ngx-slick-carousel';
 
 @Component({
@@ -37,91 +37,6 @@ export class EntranceComponent implements OnInit {
     this.StartTime = new Date().getTime()
   }
 
-  // getUrl(slide){
-  //   if(this.isTimeElapsed(this.StartTime)){
-  //     if(slide == 'right' || slide == 'next'){
-  //       return this.getUrlById(this.right());
-  //     } else if (slide == 'left') {
-  //       return this.getUrlById(this.left());
-  //     }
-  //   } 
-  // }
-
-  // getUrlById(id){
-  //   if(id==1){
-  //     return "url('/assets/img/Landing Page/1 .jpg')";
-  //   } else if(id == 2) {
-  //     return "url('/assets/img/Landing Page/2 .mp4')";
-  //   } else if(id == 3) {
-  //     return "url('/assets/img/Landing Page/3 .jpg')";
-  //   } else if(id == 4) {
-  //     return "url('/assets/img/Landing Page/4 .jpg')";
-  //   } else if(id == 5) {
-  //     return "url('/assets/img/Landing Page/5 .jpg')";
-  //   } else if(id == 6) {
-  //     return "url('/assets/img/Landing Page/6 .mp4')";
-  //   } else {
-  //     return "url('/assets/img/Landing Page/1 .jpg')";
-  //   }
-  // }
-  
-  // right(){
-  //   this.CURRENT_SLIDE +=1
-  //   if (this.CURRENT_SLIDE<=6){
-  //     console.log(this.getUrlById(this.CURRENT_SLIDE));
-  //   } else if (this.CURRENT_SLIDE>6){
-  //     this.CURRENT_SLIDE = 1
-  //     console.log(this.getUrlById(this.CURRENT_SLIDE));
-  //   }
-  // }
-
-  // left(){
-  //   this.CURRENT_SLIDE -=1
-  //   if (this.CURRENT_SLIDE>=1){
-  //     console.log(this.getUrlById(this.CURRENT_SLIDE));
-  //   } else if (this.CURRENT_SLIDE<1){
-  //     this.CURRENT_SLIDE = 6
-  //     console.log(this.getUrlById(this.CURRENT_SLIDE));
-  //   }
-  // }
-
-  // calcuateStylesLeft() {
-  //   return {
-  //     'background-image': this.getUrl('left'),
-  //     'background-size': 'cover',
-  //     'background-position': 'center',
-  //     'width': '1366px', 
-  //     'height':'768px', 
-  //     'position': 'absolute',
-  //     'left': '-1366px',
-  //     'top': '0px',
-  //     'z-index': 0
-  //   }
-  // }
-
-  // calcuateStylesRight(){
-  //   return {
-  //     'background-image': this.getUrl('right'),
-  //     'background-size': 'cover',
-  //     'background-position': 'center',
-  //     'width': '1366px', 
-  //     'height':'768px', 
-  //     'position': 'absolute',
-  //     'left': '0px',
-  //     'top': '0px',
-  //     'z-index': 1
-  //   }
-  // }
-
-  isTimeElapsed(start){
-    var elapsed = new Date().getTime() - start;
-    if(elapsed > this.TIMEOUT){
-      return true;
-    } else {
-      return false;
-    }
-  }
-
   getVisibility(component, component_id){
     if(component=='line'){
       if (component_id == this.CURRENT_SLIDE){
@@ -149,7 +64,6 @@ export class EntranceComponent implements OnInit {
   }
   
   breakpoint(e) {
-
     console.log('breakpoint');
   }
   

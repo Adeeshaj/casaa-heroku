@@ -48,7 +48,7 @@
         <div class="news-dot-list">
             <div class="dot-line" *ngFor="let news of all_news">
                 <img src="assets/img/other/assets_11.CASAA Web News_2020-11-15/Group 336.svg" position="relative" style="margin:26px 0 0 0" [style.display]="getVisibility('dot-selected', news.id)">
-                <img src="assets/img/other/assets_11.CASAA Web News_2020-11-15/Ellipse 54.svg" position="relative" style="margin:26px 4px 0 4px" [style.display]="getVisibility('dot', news.id)" (click)="selectNews(news.id)">
+                <img src="assets/img/other/assets_11.CASAA Web News_2020-11-15/Ellipse 54.svg" position="relative" style="margin:26px 4px 0 4px; cursor: pointer;" [style.display]="getVisibility('dot', news.id)" (click)="selectNews(news.id)">
                 <div class="Line-3" [style.display]="getVisibility('line', news.id)"></div>
             </div>
         </div>
