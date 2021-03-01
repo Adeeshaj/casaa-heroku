@@ -6,8 +6,112 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style type="text/css">
+    .CASAA-web-loading {
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 17px;
+        height: 17px;
+    }
+
+    .Group-105 {
+        width: 8px;
+        height: 8px;
+        object-fit: contain;
+        left: 4px;
+        top: 4px;
+        z-index: 1;
+        position: absolute;
+    }
+
+    .wrapper {
+        left: 0;
+        top: 0px;
+        width: 17px; /* Set the size of the progress bar */
+        height: 17px;
+        position: absolute; /* Enable clipping */
+        clip: rect(0px, 17px, 17px, 8px); /* Hide half of the progress bar */
+    }
+      /* Set the sizes of the elements that make up the progress bar */
+    .circle {
+        width: 13.6px;
+        height: 13.6px;
+        border: 1px solid #c2041f;
+        border-radius: 8.5px;
+        position: absolute;
+        clip: rect(0px, 8px, 17px, 0px);
+    }
+      /* Using the data attributes for the animation selectors. */
+      /* Base settings for all animaed elements */
+    div[data-anim~=base] {
+        animation-iteration-count: 10;  /* Only run once */
+        animation-fill-mode: forwards; /* Hold the last keyframe */
+        animation-timing-function:linear; /* Linear animation */
+        -webkit-animation-iteration-count: 10;  /* Only run once */
+        -webkit-animation-fill-mode: forwards; /* Hold the last keyframe */
+        -webkit-animation-timing-function:linear; /* Linear animation */
+    }
+      
+    .wrapper[data-anim~=wrapper] {
+        animation-duration: 0.0001s; /* Complete keyframes asap */
+        animation-delay: 3s; /* Wait half of the animation */
+        animation-name: close-wrapper; /* Keyframes name */
+        -webkit-animation-duration: 0.01s; /* Complete keyframes asap */
+        -webkit-animation-delay: 3s; /* Wait half of the animation */
+        -webkit-animation-name: close-wrapper; /* Keyframes name */
+    }
+      
+    .circle[data-anim~=left] {
+        animation-duration: 6s; /* Full animation time */
+        animation-name: left-spin;
+        -webkit-animation-duration: 6s; /* Full animation time */
+        -webkit-animation-name: left-spin;
+    }
+    /* Rotate the left side of the progress bar from 0 to 360 degrees */
+    @keyframes left-spin {
+        from {
+          -webkit-transform: rotate(0deg);
+        }
+        to {
+          -webkit-transform: rotate(360deg);
+        }
+    }
+    /* Set the wrapper clip to auto, effectively removing the clip */
+    @keyframes close-wrapper {
+        to {
+          clip: rect(auto, auto, auto, auto);
+        }
+    }
+    /* Rotate the left side of the progress bar from 0 to 360 degrees */
+    @-webkit-keyframes left-spin {
+        from {
+          -webkit-transform: rotate(0deg);
+        }
+        to {
+          -webkit-transform: rotate(360deg);
+        }
+    }
+    /* Set the wrapper clip to auto, effectively removing the clip */
+    @-webkit-keyframes close-wrapper {
+        to {
+          clip: rect(auto, auto, auto, auto);
+        }
+    }
+  </style>
 </head>
 <body>
-  <app-root></app-root>
+  <app-root>
+    <div class="CASAA-web-loading">
+      <div class="wrapper" data-anim="base wrapper">
+          <div class="circle" data-anim="base left"></div>
+      </div>
+      <img src="assets/img/other/web-loading/Group 105.svg" class="Group-105">
+    </div>
+    
+  </app-root>
 </body>
 </html>
