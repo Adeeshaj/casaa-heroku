@@ -68,7 +68,7 @@ export class ProjectsComponent implements OnInit {
       slidesToScroll: 1,
       dots: false,
       centerMode: true,
-      focusOnSelect: true
+      focusOnSelect: false
     };
     this.sildeConfigFor = {
       slidesToShow: 1,
