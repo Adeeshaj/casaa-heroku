@@ -13,6 +13,7 @@ import { AboutComponent } from './about/about.component';
 import { NewsComponent } from './news/news.component';
 import { ContactComponent } from './contact/contact.component';
 import { BottomBarComponent } from './bottom-bar/bottom-bar.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -23,13 +24,15 @@ import { BottomBarComponent } from './bottom-bar/bottom-bar.component';
     AboutComponent,
     NewsComponent,
     ContactComponent,
-    BottomBarComponent
+    BottomBarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
-      {path: '', component: EntranceComponent},
+      {path: '', component: HomeComponent},
+      {path: 'home', component: EntranceComponent},
       {path: 'projects', component: ProjectsComponent},
       {path: 'about', component: AboutComponent},
       {path: 'news', component: NewsComponent},

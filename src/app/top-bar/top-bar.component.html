@@ -1,4 +1,4 @@
-<div class="bar" [style.background-image]= getBackground()>
+<div class="bar" [style.background-image]= getBackground() [style.visibility]="getBarVisibility()">
     <a [routerLink]="['/']"><img src='{{ "assets/img/other/" + logo + ".svg" }}' class="Group-324"></a>
     <div class="nav" [style.color]=getColor()>
         <img src='assets/img/other/assets_8. CASAA web project_2020-09-27/Group 348.svg' class="Group-348-projects" [style.visibility]="getVisibility('projects')">

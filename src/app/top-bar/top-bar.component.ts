@@ -13,7 +13,7 @@ export class TopBarComponent implements OnInit {
 
   constructor(location: Location, router: Router) { 
     router.events.subscribe(val => {
-      if (location.path() == "") {
+      if (location.path() == "/home") {
         this.logo = "assets_5. CASAA web Home page_2020-09-19/Group 324";
         this.route = "entrance"
       } else if (location.path() == "/projects"){
@@ -28,6 +28,9 @@ export class TopBarComponent implements OnInit {
       } else if (location.path() == "/contact"){
         this.logo = "assets_8. CASAA web project_2020-09-27/Group 325"
         this.route = "contact"
+      } else if (location.path() == ""){
+        this.logo = ""
+        this.route = ""
       } else {
         this.logo = "assets_8. CASAA web project_2020-09-27/Group 325"
         this.route = "other"
@@ -90,6 +93,15 @@ export class TopBarComponent implements OnInit {
     }
   }
   
+  getBarVisibility(){
+    console.log(this.route)
+    if (this.route == ""){
+      console.log("x")
+      return 'hidden'
+    } else {
+      return 'visible'
+    }
+  }
 
 
 

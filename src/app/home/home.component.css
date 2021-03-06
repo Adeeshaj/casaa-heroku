@@ -1,0 +1,32 @@
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.box img {
+    width: 100%;
+}
+
+.box:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 20px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.3);
+    transform: skewX(-30deg);
+    transition: 50%;
+    animation: boxmove 2s  infinite;
+}
+
+@keyframes boxmove {
+    0% {
+      left: -50px;
+    }
+    100% {
+      left: 130px;
+    }
+}
